@@ -4,7 +4,15 @@
     
     <url>
     
-      <loc>/publication/scmerge/</loc>
+      <loc>/project/scmerge/</loc>
+      <lastmod>2018-10-29T00:00:00+11:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/publication/scmerge/scmerge/</loc>
       <lastmod>2018-08-15T00:00:00+10:00</lastmod>
     </url>
     
@@ -68,22 +76,6 @@
     
     <url>
     
-      <loc>/project/deep-learning/</loc>
-      <lastmod>2016-04-27T00:00:00+10:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/project/example-external-project/</loc>
-      <lastmod>2016-04-27T00:00:00+10:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/post/getting-started/</loc>
       <lastmod>2018-01-13T00:00:00+11:00</lastmod>
     </url>
@@ -135,26 +127,8 @@
     
     <url>
     
-      <loc>/tags/deep-learning/</loc>
-      <lastmod>2016-04-27T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/demo/</loc>
-      <lastmod>2016-04-27T00:00:00+10:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/project/</loc>
-      <lastmod>2016-04-27T00:00:00+10:00</lastmod>
+      <lastmod>2018-10-29T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -190,7 +164,7 @@
     <url>
     
       <loc>/tags/single-cell/</loc>
-      <lastmod>2018-08-15T00:00:00+10:00</lastmod>
+      <lastmod>2018-10-29T00:00:00+11:00</lastmod>
       <priority>0</priority>
     </url>
     

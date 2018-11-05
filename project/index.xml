@@ -7,27 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +1000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Oct 2018 00:00:00 +1100</lastBuildDate>
     
 	<atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Deep Learning</title>
-      <link>/project/deep-learning/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +1000</pubDate>
+      <title>scMerge</title>
+      <link>/project/scmerge/</link>
+      <pubDate>Mon, 29 Oct 2018 00:00:00 +1100</pubDate>
       
-      <guid>/project/deep-learning/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus.</description>
-    </item>
-    
-    <item>
-      <title>External Project</title>
-      <link>/project/example-external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +1000</pubDate>
-      
-      <guid>/project/example-external-project/</guid>
-      <description></description>
+      <guid>/project/scmerge/</guid>
+      <description>Concerted examination of multiple collections of single cell RNA-Seq (scRNA-Seq) data promises further biological insights that cannot be uncovered with individual datasets. However, such integrative analyses are challenging and require sophisticated methodologies. To enable effective interrogation of multiple scRNA-Seq datasets, we have developed a novel algorithm, named scMerge, that removes unwanted variation by combining stably expressed genes and utilizing pseudo-replicates across datasets. Analysis of large collections of publicly available datasets demonstrates that scMerge performs well in multiple scenarios and enhances biological discovery, including inferring cell developmental trajectories.</description>
     </item>
     
   </channel>
