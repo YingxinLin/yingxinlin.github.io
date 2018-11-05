@@ -6,8 +6,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 2.4.0">
-  <meta name="generator" content="Hugo 0.46" />
+  <meta name="generator" content="Source Themes Academic 3.1.0">
+  <meta name="generator" content="Hugo 0.50" />
   <meta name="author" content="Yingxin Lin">
 
   
@@ -25,9 +25,13 @@
   
 
   
+
+  
+
   
   
-  <meta name="theme-color" content="#328cc1">
+  
+  <meta name="theme-color" content="#4477aa">
   
 
   
@@ -35,9 +39,9 @@
   
   
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
 
     
@@ -99,40 +103,36 @@
 
   
 
-  
+  <script src="https://use.fontawesome.com/dc8f5495c2.js"></script>
+
 
   <title>Yingxin Lin</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71" >
 
-<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
   <div class="container">
 
     
-    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Yingxin Lin</a>
       
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-              data-target=".navbar-collapse" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
       </button>
       
-      <a class="navbar-brand" href="/">Yingxin Lin</a>
-    </div>
 
     
-    <div class="collapse navbar-collapse">
+    <div class="collapse navbar-collapse" id="navbar">
 
       
       
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="navbar-nav ml-auto">
         
 
         
-        
+
         
         
         
@@ -140,7 +140,7 @@
         
 
         <li class="nav-item">
-          <a href="/#about" data-target="#about">
+          <a class="nav-link" href="/#about" data-target="#about">
             
             <span>Home</span>
             
@@ -151,7 +151,7 @@
         
 
         
-        
+
         
         
         
@@ -159,7 +159,7 @@
         
 
         <li class="nav-item">
-          <a href="/#publications" data-target="#publications">
+          <a class="nav-link" href="/#publications" data-target="#publications">
             
             <span>Publications</span>
             
@@ -170,7 +170,7 @@
         
 
         
-        
+
         
         
         
@@ -178,7 +178,7 @@
         
 
         <li class="nav-item">
-          <a href="/#talks" data-target="#talks">
+          <a class="nav-link" href="/#talks" data-target="#talks">
             
             <span>Talks</span>
             
@@ -189,7 +189,7 @@
         
 
         
-        
+
         
         
         
@@ -197,7 +197,7 @@
         
 
         <li class="nav-item">
-          <a href="/#contact" data-target="#contact">
+          <a class="nav-link" href="/#contact" data-target="#contact">
             
             <span>Contact</span>
             
@@ -206,9 +206,12 @@
 
         
         
-      
 
       
+
+        
+
+        
       </ul>
 
     </div>
@@ -236,12 +239,11 @@
 
 
 <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-address">
-  <div class="col-xs-12 col-md-4">
+  <div class="col-12 col-lg-4">
     <div id="profile">
 
       
-      <div class="portrait" style="background-image: url('/img/portrait.jpg');"></div>
-      <meta itemprop="image" content="/img/portrait.jpg">
+      <img class="portrait" src="/img/portrait.jpg" itemprop="image" alt="Avatar">
       
 
       <div class="portrait-title">
@@ -265,22 +267,46 @@
       <ul class="network-icon" aria-hidden="true">
         
         
+        
+        
+        
+        
+        
+        
+          
+        
         <li>
-          <a itemprop="sameAs" href="yingxin.lin@sydney.edu.au" target="_blank" rel="noopener">
+          <a itemprop="sameAs" href="/yingxin.lin@sydney.edu.au" >
             <i class="fa fa-envelope big-icon"></i>
           </a>
         </li>
         
         
+        
+        
+        
+        
+        
+        
+          
+        
         <li>
-          <a itemprop="sameAs" href="//twitter.com/LinYingxin" target="_blank" rel="noopener">
+          <a itemprop="sameAs" href="//twitter.com/LinYingxin" >
             <i class="fa fa-twitter big-icon"></i>
           </a>
         </li>
         
         
+        
+        
+        
+        
+        
+        
+          
+        
         <li>
-          <a itemprop="sameAs" href="//github.com/YingxinLin" target="_blank" rel="noopener">
+          <a itemprop="sameAs" href="//github.com/YingxinLin" >
             <i class="fa fa-github big-icon"></i>
           </a>
         </li>
@@ -289,19 +315,19 @@
 
     </div>
   </div>
-  <div class="col-xs-12 col-md-8" itemprop="description">
+  <div class="col-12 col-lg-8" itemprop="description">
 
     
 
 <h1 id="biography">Biography</h1>
 
-<p>I am a PhD candidate in Statistics under the supervision of Prof. Jean Yang and Dr. John Ormerod at the University of Sydney. I am a member of <a href="http://www.maths.usyd.edu.au/ut/people.html" target="_blank">the School of Mathematics and Statistics</a> and <a href="http://www.maths.usyd.edu.au/u/SMS/bioinformatics/" target="_blank">Sydney Bioinformatics and Biometrics Group</a>. My main research interest is in normalisation and statistical modelling of single-cell RNA-seq data.</p>
+<p>I am a PhD candidate in Statistics under the supervision of Prof. Jean Yang, Dr. John Ormerod and Dr. Rachel Wang at the University of Sydney. I am a member of <a href="http://www.maths.usyd.edu.au/ut/people.html" target="_blank">the School of Mathematics and Statistics</a> and <a href="http://www.maths.usyd.edu.au/u/SMS/bioinformatics/" target="_blank">Sydney Bioinformatics and Biometrics Group</a>. My main research interest is in normalisation and statistical modelling of single-cell RNA-seq data.</p>
 
 
     <div class="row">
 
       
-      <div class="col-sm-5">
+      <div class="col-md-5">
         <h3>Interests</h3>
         <ul class="ul-interests">
           
@@ -318,12 +344,12 @@
       
 
       
-      <div class="col-sm-7">
+      <div class="col-md-7">
         <h3>Education</h3>
         <ul class="ul-edu fa-ul">
           
           <li>
-            <i class="fa-li fa fa-graduation-cap"></i>
+            <i class="fa-li fas fa-graduation-cap"></i>
             <div class="description">
               <p class="course">BSc (Advanced Mathematics) (Honours) in Statistics and Mathematics, 2017</p>
               <p class="institution">The University of Sydney</p>
@@ -345,6 +371,86 @@
   
   
   
+  <section id="skills" class="home-section">
+    <div class="container">
+      
+
+
+<div class="row featurette">
+  
+  <div class="col-md-12 section-heading">
+    <h1>Skills</h1>
+    
+  </div>
+  
+
+  
+
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-4">
+    <div class="featurette-icon"><i class="fas fa-chart-bar"></i></div>
+    <h3>Statistics</h3>
+    <p>100%</p>
+  </div>
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-4">
+    <div class="featurette-icon"><i class="fab fa-r-project"></i></div>
+    <h3>R</h3>
+    <p>100%</p>
+  </div>
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-4">
+    <div class="featurette-icon"><i class="fas fa-laptop-code"></i></div>
+    <h3>Markdown, Shiny</h3>
+    <p>100%</p>
+  </div>
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-4">
+    <div class="featurette-icon"><i class="fas fa-camera-retro"></i></div>
+    <h3>Photography</h3>
+    <p>60%</p>
+  </div>
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-4">
+    <div class="featurette-icon"><i class="fas fa-baseball-ball"></i></div>
+    <h3>Tennis</h3>
+    <p>60%</p>
+  </div>
+  
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  
+  
   <section id="publications" class="home-section">
     <div class="container">
       
@@ -353,12 +459,12 @@
 
 
 <div class="row">
-  <div class="col-xs-12 col-md-4 section-heading">
+  <div class="col-12 col-lg-4 section-heading">
     <h1>Publications</h1>
     
     
   </div>
-  <div class="col-xs-12 col-md-8">
+  <div class="col-12 col-lg-8">
     
 
     
@@ -371,7 +477,7 @@
     
       
         <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="fa fa-file-text-o pub-icon" aria-hidden="true"></i>
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
   <span itemprop="author">
     <strong>Y Lin</strong>, S Ghazanfar, K Wang, JA Gagnon-Bartsch, KK Lo, X Su, ZG Han, JT Ormerod, TP Speed, P Yang, J YH Yang</span>.
   <a href="/publication/scmerge/" itemprop="name">scMerge: Integration of multiple single-cell transcriptomics datasets leveraging stable expression and pseudo-replication</a>.
@@ -382,18 +488,11 @@
 
 
 
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.biorxiv.org/content/early/2018/08/16/393280" target="_blank" rel="noopener">
-  PDF
-</a>
 
 
 
 
-
-
-<a class="btn btn-primary btn-outline btn-xs" href="http://www.maths.usyd.edu.au/u/yingxinl/wwwnb/scMergeData/" target="_blank" rel="noopener">
-  Dataset
-</a>
+  
 
 
 
@@ -403,9 +502,59 @@
 
 
 
-<a class="btn btn-primary btn-outline btn-xs" href="https://sydneybiox.github.io/scMerge/index.html" target="_blank" rel="noopener">
-  Website
-</a>
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.biorxiv.org/content/early/2018/08/16/393280" target="_blank" rel="noopener">
+    <i class="ai ai-biorxiv mr-1"></i>
+    PDF
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://sydneybiox.github.io/scMerge/index.html" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>
+    Github
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://www.maths.usyd.edu.au/u/yingxinl/wwwnb/scMergeData/" target="_blank" rel="noopener">
+    <i class="fas fa-database mr-1"></i>
+    dataset
+  </a>
 
 </p>
 </div>
@@ -414,7 +563,7 @@
     
       
         <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="fa fa-file-text-o pub-icon" aria-hidden="true"></i>
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
   <span itemprop="author">
     T Kim, I Chen, <strong>Y Lin</strong>, A Wang, J YH Yang, P Yang</span>.
   <a href="/publication/similarity/" itemprop="name">Impact of similarity metrics on single-cell RNA-seq data clustering</a>.
@@ -425,9 +574,20 @@
 
 
 
-<a class="btn btn-primary btn-outline btn-xs" href="https://academic.oup.com/bib/advance-article/doi/10.1093/bib/bby076/5077112" target="_blank" rel="noopener">
+
+
+
+
+  
+    
+  
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://academic.oup.com/bib/advance-article/doi/10.1093/bib/bby076/5077112" target="_blank" rel="noopener">
   PDF
 </a>
+
+
 
 
 
@@ -449,7 +609,7 @@
     
       
         <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
-  <i class="fa fa-file-text-o pub-icon" aria-hidden="true"></i>
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
   <span itemprop="author">
     <strong>Y Lin</strong>, S Ghazanfar, D Strbenac, A Wang, E Patrick, TP Speed, P Yang, J YH Yang</span>.
   <a href="/publication/housekeeping/" itemprop="name">Housekeeping genes, revisited at the single-cell level</a>.
@@ -460,9 +620,11 @@
 
 
 
-<a class="btn btn-primary btn-outline btn-xs" href="https://www.biorxiv.org/content/biorxiv/early/2017/12/06/229815" target="_blank" rel="noopener">
-  PDF
-</a>
+
+
+
+
+  
 
 
 
@@ -477,9 +639,38 @@
 
 
 
-<a class="btn btn-primary btn-outline btn-xs" href="http://shiny.maths.usyd.edu.au/scHK/" target="_blank" rel="noopener">
-  Shiny
-</a>
+
+
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.biorxiv.org/content/biorxiv/early/2017/12/06/229815" target="_blank" rel="noopener">
+    <i class="ai ai-biorxiv mr-1"></i>
+    PDF
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://shiny.maths.usyd.edu.au/SEG/" target="_blank" rel="noopener">
+    <i class="fab fa-r-project mr-1"></i>
+    Shiny
+  </a>
 
 </p>
 </div>
@@ -505,12 +696,12 @@
 
 
 <div class="row">
-  <div class="col-xs-12 col-md-4 section-heading">
+  <div class="col-12 col-lg-4 section-heading">
     <h1>Recent &amp; Upcoming Talks</h1>
     
     
   </div>
-  <div class="col-xs-12 col-md-8">
+  <div class="col-12 col-lg-8">
     
 
     
@@ -521,7 +712,7 @@
     
       
         <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/Event">
-  <i class="fa fa-calendar pub-icon" aria-hidden="true"></i>
+  <i class="fas fa-calendar-alt pub-icon" aria-hidden="true"></i>
   <span itemprop="name"><a href="/talk/example-talk/">scMerge: Removing unwanted variation for merging multiple single cell datasets.</a></span>
   <div itemprop="startDate">
     
@@ -535,8 +726,26 @@
             Towards Greater Reproducibility in Medical Research Symposium
     
   </div>
-  <div class="talk-links">
+  <div class="btn-links">
     
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
 
 
 
@@ -587,21 +796,6 @@
   </div>
 </div>
 
-
-
-<script id="search-hit-fuse-template" type="text/x-template">
-  <div class="search-hit" id="summary-{{key}}">
-    <div class="search-hit-content">
-      <div class="search-hit-name">
-        <a href="{{relpermalink}}">{{title}}</a>
-        <div class="article-metadata search-hit-type">{{type}}</div>
-        <p class="search-hit-description">{{snippet}}</p>
-      </div>
-    </div>
-  </div>
-</script>
-
-
     </div>
   </section>
   
@@ -616,19 +810,21 @@
 
 
 
-<div class="row">
-  <div class="col-xs-12 col-md-4 section-heading">
+<div class="row contact-widget">
+  <div class="col-12 col-lg-4 section-heading">
     <h1>Contact</h1>
     
   </div>
-  <div class="col-xs-12 col-md-8">
+  <div class="col-12 col-lg-8">
+    
+
     
 
     <ul class="fa-ul" itemscope>
 
       
       <li>
-        <i class="fa-li fa fa-envelope fa-2x" aria-hidden="true"></i>
+        <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
         <span id="person-email" itemprop="email"><a href="mailto:yingxin.lin@sydney.edu.au">yingxin.lin@sydney.edu.au</a></span>
       </li>
       
@@ -645,7 +841,7 @@
 
       
       <li>
-        <i class="fa-li fa fa-map-marker fa-2x" aria-hidden="true"></i>
+        <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
         <span id="person-address" itemprop="address">Carslaw Buildng, The University of Sydney, Australia</span>
       </li>
       
@@ -665,52 +861,54 @@
 
 
 
-<footer class="site-footer">
-  <div class="container">
+<div class="container">
+  <footer class="site-footer">
+  
+  <p class="powered-by">
+    <a href="/privacy/">Privacy Policy</a>
+  </p>
+  
+
+  <p class="powered-by">
+    &copy; 2018 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
 
     
-    <p class="powered-by">
-      <a href="/privacy/">Privacy Policy</a>
-    </p>
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
     
-
-    <p class="powered-by">
-
-      &copy; 2018 &middot; 
-
-      Powered by the
-      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
-
-      <span class="pull-right" aria-hidden="true">
-        <a href="#" id="back_to_top">
-          <span class="button_icon">
-            <i class="fa fa-chevron-up fa-2x"></i>
-          </span>
-        </a>
-      </span>
-
-    </p>
-  </div>
+  </p>
 </footer>
+
+</div>
 
 
 <div id="modal" class="modal fade" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Cite</h4>
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-      <div>
-        <pre><code class="modal-body tex"></code></pre>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
       </div>
       <div class="modal-footer">
-        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
-          <i class="fa fa-copy"></i> Copy
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
         </a>
-        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
-          <i class="fa fa-download"></i> Download
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
         </a>
         <div id="modal-error"></div>
       </div>
@@ -726,9 +924,9 @@
     
     
     
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
 
@@ -760,9 +958,10 @@
     
     
     <script>
-      const search_index_filename = "/search.json";
+      const search_index_filename = "/index.json";
       const i18n = {
         'placeholder': "Search...",
+        'results': "Search Results",
         'no_results': "No results found"
       };
       const content_type = {
@@ -771,6 +970,24 @@
         'publication' : "Publications",
         'talk' : "Talks"
         };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
     </script>
     
 

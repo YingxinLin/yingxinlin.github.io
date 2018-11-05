@@ -27,7 +27,16 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 +1000</pubDate>
       
       <guid>/home/about/</guid>
-      <description>Biography I am a PhD candidate in Statistics under the supervision of Prof. Jean Yang and Dr. John Ormerod at the University of Sydney. I am a member of the School of Mathematics and Statistics and Sydney Bioinformatics and Biometrics Group. My main research interest is in normalisation and statistical modelling of single-cell RNA-seq data.</description>
+      <description>Biography I am a PhD candidate in Statistics under the supervision of Prof. Jean Yang, Dr. John Ormerod and Dr. Rachel Wang at the University of Sydney. I am a member of the School of Mathematics and Statistics and Sydney Bioinformatics and Biometrics Group. My main research interest is in normalisation and statistical modelling of single-cell RNA-seq data.</description>
+    </item>
+    
+    <item>
+      <title>Skills</title>
+      <link>/home/skills/</link>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 +1000</pubDate>
+      
+      <guid>/home/skills/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -36,15 +45,6 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 +1000</pubDate>
       
       <guid>/home/publications_selected/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/home/skills/</link>
-      <pubDate>Tue, 21 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/home/skills/</guid>
       <description></description>
     </item>
     
