@@ -50,6 +50,11 @@ background-color: #E64626
 <br><br><br>
 
 ]
+---
+
+class: segue-red
+
+.black[# Main challenge in integration of scRNA-seq data: strong batch effect.]
 
 ---
 class: segue-red
@@ -207,7 +212,7 @@ devtools::install_github("SydneyBioX/scMerge.data")
 devtools::install_github("SydneyBioX/scMerge")
 ```
 
-To load the `scMerge` package. We designed our package to be consistent with the popular BioConductor’s single cell analysis framework, namely the `SingleCellExperiment` package and `scater`.
+We designed our package to be consistent with the popular BioConductor’s single cell analysis framework, namely the packages `SingleCellExperiment` and `scater`.
 
 
 ```{r message = FALSE}
@@ -236,7 +241,7 @@ Semi-supervised scMerge
 
 ## ESC data
 
-We will use a mouse embryonic stem cell (ESC) data as an example to illustrate  `scMerge` function. 
+We will use a mouse embryonic stem cell (mESC, E-MTAB-2600) data as an example to illustrate  `scMerge` function. 
 
 .scroll-output[
 ```{r}
@@ -276,7 +281,7 @@ scater::plotPCA(sce_mESC,
 
 Key inputs of `scMerge`:
 
-- `sce_combine`: a `SingleCellExperiment` object contains the batch-combined matrix with batch info in `colData` and `counts` and `logcounts` matrices in `assay` slot.
+- `sce_combine`: a `SingleCellExperiment` object contains the batch-combined matrix with batch info in `colData`.
 - `ctl`: a gene list of negative control genes.
 - `assay_name`: The assay name for the adjusted expression matrix. 
 
@@ -286,7 +291,7 @@ In unsupervised scMerge, we will perform a k-means clustering to obtain pseudo-r
 
 --
 
-For example, we know the first, forth, and fifth batch contains only one cell type and the second and third batch contains three cell types. Hence, `kmeansK = c(1,3,3,1,1)` in this case.
+For example, we know the first, forth, and fifth batch contain only one cell type and the second and third batch contain three cell types. Hence, `kmeansK = c(1,3,3,1,1)` in this case.
 
 --
 
@@ -427,7 +432,7 @@ sce_mESC <- scMerge(sce_mESC,
 ## Achieving fast computation: `fastRUVIII` `r icon::fa("rocket",pull = "right")`
 
 
-`RUVIII` function in the package `ruv` is great but slow for the large single-cell data. We develop a fast version of scMerge, by using 
+`RUVIII` function in the package `ruv` is great but slow for the large single-cell data. We develop a fast version of `RUVIII`, by using 
 - *randomised SVD algorithm*: to obtain a very accurate approximation of the noise structure in the data by performing a partial SVD. 
 -  package `Rcpp` to speed up the matrix calculation.
 - `rsvd_prop` is a parameter between 0 and 1, controlling the degree of approximations.
@@ -497,6 +502,17 @@ str(segList)
 scSEGIndex(exprsMat, cell_type = NULL, ncore = 1)
 ```
 
+
+---
+
+## Summary
+
+- A novel algorithm to remove unwanted variation from multiple single cell RNA-seq datasets, allowing for multiple experimental set ups.  This is achieved by identifying stably expressed genes and estimating pseudo replication between data sets.
+- Analysis of many publicly available datasets reveals that our algorithm performs well in general
+- Semi-supervised and supervised version of scMerge allows people to incoporate prior knowledge faciliated by experimental design.
+
+
+
 ---
 
 ## Reference list
@@ -560,9 +576,6 @@ background-position: 90% 95%
 .pull-left[
 .pull-bottom[
 ### More information
-<a href="mailto:yingxin.lin@sydney.edu.a">
-.black[`r icon::fa("paper-plane")` yingxin.lin@sydney.edu.au]
-</a>
 
 <a href="https://sydneybiox.github.io/scMerge/">
 .black[`r icon::fa("link")` sydneybiox.github.io/scMerge/]
