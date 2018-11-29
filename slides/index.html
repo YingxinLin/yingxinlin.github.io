@@ -156,6 +156,43 @@ background-size: contain
 background-position: 50% 50%
 
 ---
+class: segue-red
+
+# Evaluation
+
+
+
+
+---
+
+class: middle, bottom
+background-image: url("assets/scMergeSlides/Slide31.png")
+background-size: contain
+background-position: 50% 50%
+
+---
+
+class: middle, bottom
+background-image: url("assets/scMergeSlides/sil.png")
+background-size: contain
+background-position: 50% 50%
+
+---
+
+class: middle, bottom
+background-image: url("assets/scMergeSlides/sil2.png")
+background-size: contain
+background-position: 50% 50%
+
+---
+
+class: middle, bottom
+background-image: url("assets/scMergeSlides/Slide32.png")
+background-size: contain
+background-position: 50% 50%
+
+---
+
 
 
 ## Installing <i class="fas  fa-download fa-pull-right "></i>
@@ -189,12 +226,17 @@ class: segue-red
 
 # Case Study
 
+Unsupervised scMerge
+
+Supervised scMerge
+
+Semi-supervised scMerge
 
 ---
 
 ## ESC data
 
-We will use a mouse ESC data as an example to illustrate  `scMerge` function. 
+We will use a mouse embryonic stem cell (ESC) data as an example to illustrate  `scMerge` function. 
 
 .scroll-output[
 
@@ -224,7 +266,7 @@ sce_mESC
 
 ## ESC data
 
-In the mESC data, we pooled data from 5 different batches from three different cell types. Using a PCA plot, we can see that despite strong separation of cell types, there is also a strong separation due to batch effects. This information is stored in the `colData` of `sce_mESC`.
+The mESC data contains 5 different batches from three different cell types. Using a PCA plot, we can see that despite strong separation of cell types, there is also a strong separation due to batch effects. 
 
 
 .pull-left[
@@ -255,11 +297,39 @@ scater::plotPCA(sce_mESC,
 ![](index_files/figure-html/unnamed-chunk-5-1.png)&lt;!-- --&gt;
 ]
 
----
 
+
+---
 ## ESC data: running unsupervised `scMerge`
 
-In unsupervised scMerge, we will perform a k-means clustering to obtain pseudo-replicates. This requires the users to supply a `kmeansK` vector with each element indicating number of clusters in each of the batches. For example, we know the first, forth, and fifth batch contains only one cell type and the second and third batch contains three cell types. Hence, `kmeansK = c(1,3,3,1,1)` in this case.
+
+
+Key inputs of `scMerge`:
+
+- `sce_combine`: a `SingleCellExperiment` object contains the batch-combined matrix with batch info in `colData` and `counts` and `logcounts` matrices in `assay` slot.
+- `ctl`: a gene list of negative control genes.
+- `assay_name`: The assay name for the adjusted expression matrix. 
+
+--
+
+In unsupervised scMerge, we will perform a k-means clustering to obtain pseudo-replicates. This requires the users to supply a `kmeansK` vector with each element indicating number of clusters in each of the batches. 
+
+--
+
+For example, we know the first, forth, and fifth batch contains only one cell type and the second and third batch contains three cell types. Hence, `kmeansK = c(1,3,3,1,1)` in this case.
+
+--
+
+
+```r
+sce_mESC &lt;- scMerge(sce_combine = sce_mESC, 
+                    ctl = segList_ensemblGeneID$mouse$mouse_scSEG,
+                    kmeansK = c(1,3,3,1,1),
+                    assay_name = "scMerge_unsupervised")
+```
+
+---
+## ESC data: running unsupervised `scMerge`
 
 
 ```r
@@ -271,11 +341,20 @@ sce_mESC &lt;- scMerge(sce_combine = sce_mESC,
 
 The normalised data matrix will be stored in slot `assays` with the list name as `"scMerge_unsupervised"` of `sce_mESC`.
 
+--
+
+.blockquote[
+### <i class="fas  fa-comment-dots "></i> Comments
+
+scMerge is robust to overestimation of number of clusters in general (See our manuscript for details).
+]
+
+
 ---
 
 ## ESC data: running unsupervised `scMerge`
 
-We now colour construct the PCA plot again on our normalised data. We can observe a much better separation by cell type and less separation by batches.
+We now construct the PCA plot again on our normalised data. We can observe a much better separation by cell type and less separation by batches.
 
 
 ```r
@@ -285,14 +364,57 @@ scater::plotPCA(sce_mESC,
                 run_args = list(exprs = "scMerge_unsupervised"))
 ```
 
-![](index_files/figure-html/unnamed-chunk-7-1.png)&lt;!-- --&gt;
+![](index_files/figure-html/unnamed-chunk-8-1.png)&lt;!-- --&gt;
 
+
+---
+
+## Other diagnostic plots
+
+**Explanatory variables plot**: density plot of percentage of phenotypic variance explained.
+
+
+
+
+
+
+.pull-left[
+
+```r
+scater::plotExplanatoryVariables(sce_mESC,
+        method = "density",
+        exprs_values = "logcounts", 
+        variables = c("batch", "cellTypes",
+                      "total_counts",
+                      "total_features")) + 
+  labs(title = "logcounts")
+```
+
+![](index_files/figure-html/unnamed-chunk-10-1.png)&lt;!-- --&gt;
+]
+
+.pull-right[
+
+```r
+scater::plotExplanatoryVariables(sce_mESC,
+        method = "density",
+        exprs_values = "scMerge_unsupervised", 
+        variables = c("batch", "cellTypes",
+                      "total_counts",
+                      "total_features")) + 
+  labs(title = "scMerge")
+```
+
+![](index_files/figure-html/unnamed-chunk-11-1.png)&lt;!-- --&gt;
+]
 
 ---
 
 ## ESC data: running supervised `scMerge`
 
-If **all** cell type information is available to the user, then it is possible to use this information to create pseudo-replicates. This can be done through the `cell_type` argument in the `scMerge` function.
+If **all** cell type information is available to the users, or users has already performed clustering analysis using their favourite method, then it is possible to use this information to create pseudo-replicates. 
+
+This can be done through the `cell_type` argument in the `scMerge` function.
 
 
 
@@ -308,7 +430,9 @@ sce_mESC &lt;- scMerge(sce_mESC,
 
 ## ESC data: running semi-supervised `scMerge` 
 
-If the user is only able to access **partial** cell type information (or have confidence in only partial cell type informaton), then it is still possible to use this information to create pseudo-replicates. This can be done through the `cell_type` and `cell_type_inc` arguments in the scMerge function. `cell_type_inc` should contain a vector of indices indicating which elements in the `cell_type` vector should be used to perform semi-supervised `scMerge`.
+If the user is only able to access **partial** cell type information (or have confidence in only partial cell type informaton), then it is still possible to use this information to create pseudo-replicates. 
+
+This can be done through the `cell_type` and `cell_type_inc` arguments in the scMerge function. `cell_type_inc` should contain a vector of indices indicating which elements in the `cell_type` vector should be used to perform semi-supervised `scMerge`.
 
 
 
@@ -325,7 +449,8 @@ sce_mESC &lt;- scMerge(sce_mESC,
 
 
 ## ESC data: running semi-supervised `scMerge` 
-There is alternative semi-supervised method to create pseudo-replicates for scMerge. This uses known cell type information to identify mutual nearest clusters and it is achieved via the `cell_type` and `cell_type_match = TRUE` options in the `scMerge` function.
+There is alternative semi-supervised method to create pseudo-replicates for scMerge. This uses known cell type information to identify mutual nearest clusters.
+It is achieved via the `cell_type` and `cell_type_match = TRUE` options in the `scMerge` function.
 
 
 
@@ -344,7 +469,7 @@ sce_mESC &lt;- scMerge(sce_mESC,
 ## Achieving fast computation: `fastRUVIII` <i class="fas  fa-rocket fa-pull-right "></i>
 
 
-`RUVIII` function in the package `ruv` is great but slow for the large single-cell daat. We develop a fast version of scMerge, by using 
+`RUVIII` function in the package `ruv` is great but slow for the large single-cell data. We develop a fast version of scMerge, by using 
 - *randomised SVD algorithm*: to obtain a very accurate approximation of the noise structure in the data by performing a partial SVD. 
 -  package `Rcpp` to speed up the matrix calculation.
 - `rsvd_prop` is a parameter between 0 and 1, controlling the degree of approximations.
@@ -380,26 +505,28 @@ We recommend only use this option when the number of cells is large in your sing
 
 ---
 
+
+background-image: url(assets/scMergeSlides/speedup.png)
+background-size: 550px
+background-position: 20% 80%
+
 ## Achieving fast computation: `fastRUVIII` <i class="fas  fa-rocket fa-pull-right "></i>
 
-
-A figure indicates the speed up
-
+For the case with 10k cell, the speed up of `fastRUVIII` is about 10 times, compared to `RUVIII` from package `ruv`. 
 ---
 
-## Achieving fast computation: `BiocParallel` <i class="fas  fa-rocket fa-pull-right "></i>
+&lt;!-- ## Achieving fast computation: `BiocParallel` <i class="fas  fa-rocket fa-pull-right "></i> --&gt;
 
-We also utilise `BiocParallel` package to parallise the identification of pseudo-replicates.
+&lt;!-- We also utilise `BiocParallel` package to parallise the identification of pseudo-replicates. --&gt;
 
-
-```r
-sce_mESC &lt;- scMerge(sce_mESC, 
-                    ctl = segList_ensemblGeneID$mouse$mouse_scSEG,
-                    kmeansK = c(1,3,3,1,1),
-                    assay_name = "scMerge_fast", 
-*                  parallel = TRUE,
-*                  parallelParam = bpparam())
-```
+&lt;!-- ```{r eval = F} --&gt;
+&lt;!-- sce_mESC &lt;- scMerge(sce_mESC,  --&gt;
+&lt;!--                     ctl = segList_ensemblGeneID$mouse$mouse_scSEG, --&gt;
+&lt;!--                     kmeansK = c(1,3,3,1,1), --&gt;
+&lt;!--                     assay_name = "scMerge_fast",  --&gt;
+&lt;!--                   {{parallel = TRUE, --&gt;
+&lt;!--                   parallelParam = bpparam()}}) --&gt;
+&lt;!-- ``` --&gt;
 
 
 
