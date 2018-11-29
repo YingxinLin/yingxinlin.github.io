@@ -513,22 +513,6 @@ background-position: 20% 80%
 ## Achieving fast computation: `fastRUVIII` <i class="fas  fa-rocket fa-pull-right "></i>
 
 For the case with 10k cell, the speed up of `fastRUVIII` is about 10 times, compared to `RUVIII` from package `ruv`. 
----
-
-&lt;!-- ## Achieving fast computation: `BiocParallel` <i class="fas  fa-rocket fa-pull-right "></i> --&gt;
-
-&lt;!-- We also utilise `BiocParallel` package to parallise the identification of pseudo-replicates. --&gt;
-
-&lt;!-- ```{r eval = F} --&gt;
-&lt;!-- sce_mESC &lt;- scMerge(sce_mESC,  --&gt;
-&lt;!--                     ctl = segList_ensemblGeneID$mouse$mouse_scSEG, --&gt;
-&lt;!--                     kmeansK = c(1,3,3,1,1), --&gt;
-&lt;!--                     assay_name = "scMerge_fast",  --&gt;
-&lt;!--                   {{parallel = TRUE, --&gt;
-&lt;!--                   parallelParam = bpparam()}}) --&gt;
-&lt;!-- ``` --&gt;
-
-
 
 
 ---
@@ -570,11 +554,6 @@ str(segList)
 ```r
 scSEGIndex(exprsMat, cell_type = NULL, ncore = 1)
 ```
-
-
-
-
-
 
 ---
 
