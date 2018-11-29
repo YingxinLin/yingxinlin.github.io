@@ -11,6 +11,24 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>scMerge: Integration of multiple single-cell transcriptomics datasets leveraging stable expression and pseudo-replication.</title>
+      <link>/talk/biocasia2018/</link>
+      <pubDate>Fri, 30 Nov 2018 13:00:00 +1100</pubDate>
+      
+      <guid>/talk/biocasia2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scMerge: Integration of multiple single-cell transcriptomics datasets leveraging stable expression and pseudo-replication.</title>
+      <link>/talk/abacbs/</link>
+      <pubDate>Wed, 28 Nov 2018 15:35:00 +1100</pubDate>
+      
+      <guid>/talk/abacbs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>scMerge</title>
       <link>/project/scmerge/</link>
       <pubDate>Mon, 29 Oct 2018 00:00:00 +1100</pubDate>
@@ -40,10 +58,10 @@
     
     <item>
       <title>scMerge: Removing unwanted variation for merging multiple single cell datasets.</title>
-      <link>/talk/example-talk/</link>
+      <link>/talk/onjcri/</link>
       <pubDate>Wed, 18 Jul 2018 13:00:00 +1000</pubDate>
       
-      <guid>/talk/example-talk/</guid>
+      <guid>/talk/onjcri/</guid>
       <description></description>
     </item>
     
