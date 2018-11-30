@@ -327,7 +327,7 @@ scMerge is robust to overestimation of number of clusters in general (See our ma
 
 ## ESC data: running unsupervised `scMerge`
 
-We now construct the PCA plot again on our normalised data. We can observe a much better separation by cell type and less separation by batches.
+We now construct the PCA plot again on our normalised data. We can observe a much better separation by cell type as well as a better batch mixing.
 
 ```{r fig.height=5, fig.width=6, cache = T}
 scater::plotPCA(sce_mESC, 
@@ -378,7 +378,7 @@ scater::plotExplanatoryVariables(sce_mESC,
 
 ## ESC data: running supervised `scMerge`
 
-If **all** cell type information is available to the users, or users has already performed clustering analysis using their favourite method, then it is possible to use this information to create pseudo-replicates. 
+If **all** cell type information is available to the users, or users have already performed clustering analysis using their favourite method, then it is possible to use this information to create pseudo-replicates. 
 
 This can be done through the `cell_type` argument in the `scMerge` function.
 
@@ -581,12 +581,18 @@ background-position: 90% 95%
 .black[`r icon::fa("link")` sydneybiox.github.io/scMerge/]
 </a>
 
+
+
 <a href="http://twitter.com/garthtarr">
 .black[`r icon::fa("twitter")` @LinYingxin]
 </a>
 
 <a href="http://github.com/garthtarr">
 .black[`r icon::fa("github")` @yingxinlin]
+</a>
+
+<a href="https://yingxinlin.github.io/slides/scMerge_biocAsia2018.html">
+.black[`r icon::fa("file")` Slides: yingxinlin.github.io/slides/scMerge_biocAsia2018.html]
 </a>
 ]
 ]

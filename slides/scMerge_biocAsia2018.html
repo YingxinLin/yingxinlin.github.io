@@ -3,8 +3,8 @@
   <head>
     <title></title>
     <meta charset="utf-8">
-    <link href="index_files/remark-css-0.0.1/default.css" rel="stylesheet" />
-    <link href="index_files/font-awesome-5.3.1/css/fontawesome-all.min.css" rel="stylesheet" />
+    <link href="scMerge_biocAsia2018_files/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="scMerge_biocAsia2018_files/font-awesome-5.3.1/css/fontawesome-all.min.css" rel="stylesheet" />
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
         TeX: { equationNumbers: { autoNumber: "AMS" } },
@@ -299,7 +299,7 @@ scater::plotPCA(sce_mESC,
                 shape_by = "batch")
 ```
 
-![](index_files/figure-html/unnamed-chunk-5-1.png)&lt;!-- --&gt;
+![](scMerge_biocAsia2018_files/figure-html/unnamed-chunk-5-1.png)&lt;!-- --&gt;
 ]
 
 
@@ -359,7 +359,7 @@ scMerge is robust to overestimation of number of clusters in general (See our ma
 
 ## ESC data: running unsupervised `scMerge`
 
-We now construct the PCA plot again on our normalised data. We can observe a much better separation by cell type and less separation by batches.
+We now construct the PCA plot again on our normalised data. We can observe a much better separation by cell type as well as a better batch mixing.
 
 
 ```r
@@ -369,7 +369,7 @@ scater::plotPCA(sce_mESC,
                 run_args = list(exprs = "scMerge_unsupervised"))
 ```
 
-![](index_files/figure-html/unnamed-chunk-8-1.png)&lt;!-- --&gt;
+![](scMerge_biocAsia2018_files/figure-html/unnamed-chunk-8-1.png)&lt;!-- --&gt;
 
 
 ---
@@ -395,7 +395,7 @@ scater::plotExplanatoryVariables(sce_mESC,
   labs(title = "logcounts")
 ```
 
-![](index_files/figure-html/unnamed-chunk-10-1.png)&lt;!-- --&gt;
+![](scMerge_biocAsia2018_files/figure-html/unnamed-chunk-10-1.png)&lt;!-- --&gt;
 ]
 
 .pull-right[
@@ -410,14 +410,14 @@ scater::plotExplanatoryVariables(sce_mESC,
   labs(title = "scMerge")
 ```
 
-![](index_files/figure-html/unnamed-chunk-11-1.png)&lt;!-- --&gt;
+![](scMerge_biocAsia2018_files/figure-html/unnamed-chunk-11-1.png)&lt;!-- --&gt;
 ]
 
 ---
 
 ## ESC data: running supervised `scMerge`
 
-If **all** cell type information is available to the users, or users has already performed clustering analysis using their favourite method, then it is possible to use this information to create pseudo-replicates. 
+If **all** cell type information is available to the users, or users have already performed clustering analysis using their favourite method, then it is possible to use this information to create pseudo-replicates. 
 
 This can be done through the `cell_type` argument in the `scMerge` function.
 
@@ -644,12 +644,18 @@ background-position: 90% 95%
 .black[<i class="fas  fa-link "></i> sydneybiox.github.io/scMerge/]
 &lt;/a&gt;
 
+
+
 &lt;a href="http://twitter.com/garthtarr"&gt;
 .black[<i class="fab  fa-twitter "></i> @LinYingxin]
 &lt;/a&gt;
 
 &lt;a href="http://github.com/garthtarr"&gt;
 .black[<i class="fab  fa-github "></i> @yingxinlin]
+&lt;/a&gt;
+
+&lt;a href="https://yingxinlin.github.io/slides/scMerge_biocAsia2018.html"&gt;
+.black[<i class="fas  fa-file "></i> Slides: yingxinlin.github.io/slides/scMerge_biocAsia2018.html]
 &lt;/a&gt;
 ]
 ]
