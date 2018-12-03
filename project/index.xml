@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Mon, 29 Oct 2018 00:00:00 +1100</lastBuildDate>
+    <lastBuildDate>Mon, 29 Oct 2018 00:00:00 +0800</lastBuildDate>
     
 	<atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>scMerge</title>
       <link>/project/scmerge/</link>
-      <pubDate>Mon, 29 Oct 2018 00:00:00 +1100</pubDate>
+      <pubDate>Mon, 29 Oct 2018 00:00:00 +0800</pubDate>
       
       <guid>/project/scmerge/</guid>
       <description>Concerted examination of multiple collections of single cell RNA-Seq (scRNA-Seq) data promises further biological insights that cannot be uncovered with individual datasets. However, such integrative analyses are challenging and require sophisticated methodologies. To enable effective interrogation of multiple scRNA-Seq datasets, we have developed a novel algorithm, named scMerge, that removes unwanted variation by combining stably expressed genes and utilizing pseudo-replicates across datasets. Analysis of large collections of publicly available datasets demonstrates that scMerge performs well in multiple scenarios and enhances biological discovery, including inferring cell developmental trajectories.</description>
