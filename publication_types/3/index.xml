@@ -7,24 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 15 Aug 2018 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 06 Dec 2017 00:00:00 +1100</lastBuildDate>
     
 	<atom:link href="/publication_types/3/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>scMerge: Integration of multiple single-cell transcriptomics datasets leveraging stable expression and pseudo-replication</title>
-      <link>/publication/scmerge/scmerge/</link>
-      <pubDate>Wed, 15 Aug 2018 00:00:00 +0800</pubDate>
-      
-      <guid>/publication/scmerge/scmerge/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Evaluating stably expressed genes in single cells</title>
       <link>/publication/housekeeping/housekeeping/</link>
-      <pubDate>Wed, 06 Dec 2017 00:00:00 +0800</pubDate>
+      <pubDate>Wed, 06 Dec 2017 00:00:00 +1100</pubDate>
       
       <guid>/publication/housekeeping/housekeeping/</guid>
       <description></description>

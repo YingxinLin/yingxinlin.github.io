@@ -7,15 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +1100</lastBuildDate>
     
 	<atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>scClassify: Multiscale classification of single cells via cell-type hierarchies based on ensemble learning and sample size estimation.</title>
+      <link>/talk/ozsinglecell2019/</link>
+      <pubDate>Mon, 22 Jul 2019 10:10:00 +1000</pubDate>
+      
+      <guid>/talk/ozsinglecell2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>scMerge: Integration of multiple single-cell transcriptomics datasets leveraging stable expression and pseudo-replication.</title>
       <link>/talk/biocasia2018/</link>
-      <pubDate>Fri, 30 Nov 2018 13:00:00 +0800</pubDate>
+      <pubDate>Fri, 30 Nov 2018 13:00:00 +1100</pubDate>
       
       <guid>/talk/biocasia2018/</guid>
       <description></description>
@@ -24,7 +33,7 @@
     <item>
       <title>scMerge: Integration of multiple single-cell transcriptomics datasets leveraging stable expression and pseudo-replication.</title>
       <link>/talk/abacbs/</link>
-      <pubDate>Wed, 28 Nov 2018 15:35:00 +0800</pubDate>
+      <pubDate>Wed, 28 Nov 2018 15:35:00 +1100</pubDate>
       
       <guid>/talk/abacbs/</guid>
       <description></description>
@@ -33,7 +42,7 @@
     <item>
       <title>scMerge: Removing unwanted variation for merging multiple single cell datasets.</title>
       <link>/talk/onjcri/</link>
-      <pubDate>Wed, 18 Jul 2018 13:00:00 +0800</pubDate>
+      <pubDate>Wed, 18 Jul 2018 13:00:00 +1000</pubDate>
       
       <guid>/talk/onjcri/</guid>
       <description></description>

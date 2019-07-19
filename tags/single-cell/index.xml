@@ -7,33 +7,51 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Mon, 29 Oct 2018 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 10 May 2019 00:00:00 +1000</lastBuildDate>
     
 	<atom:link href="/tags/single-cell/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>scMerge</title>
-      <link>/project/scmerge/</link>
-      <pubDate>Mon, 29 Oct 2018 00:00:00 +0800</pubDate>
+      <title>scClassify</title>
+      <link>/project/scclassify/</link>
+      <pubDate>Fri, 10 May 2019 00:00:00 +1000</pubDate>
       
-      <guid>/project/scmerge/</guid>
-      <description>Concerted examination of multiple collections of single cell RNA-Seq (scRNA-Seq) data promises further biological insights that cannot be uncovered with individual datasets. However, such integrative analyses are challenging and require sophisticated methodologies. To enable effective interrogation of multiple scRNA-Seq datasets, we have developed a novel algorithm, named scMerge, that removes unwanted variation by combining stably expressed genes and utilizing pseudo-replicates across datasets. Analysis of large collections of publicly available datasets demonstrates that scMerge performs well in multiple scenarios and enhances biological discovery, including inferring cell developmental trajectories.</description>
+      <guid>/project/scclassify/</guid>
+      <description>Recent advances in large scale single cell transcriptome profiling have greatly expanded cell-type specific characterisation of complex biological systems. A critical step in computational analysis of single-cell RNA-sequencing (scRNA-seq) data is to identify cell types from the complex tissues and organs, which is usually achieved by unsupervised clustering followed by manual annotation according to marker gene expression. With the increasing availability of large collections of scRNA-seq datasets generated from the same tissues, organs, and biological systems, as well as the comprehensive human and mouse cell atlases, we are now at the transition point where supervised classification may be trained to accurately classify cell types.</description>
     </item>
     
     <item>
-      <title>scMerge: Integration of multiple single-cell transcriptomics datasets leveraging stable expression and pseudo-replication</title>
+      <title>scMerge leverages factor analysis, stable expression, and pseudoreplication to merge multiple single-cell RNA-seq datasets</title>
       <link>/publication/scmerge/scmerge/</link>
-      <pubDate>Wed, 15 Aug 2018 00:00:00 +0800</pubDate>
+      <pubDate>Mon, 15 Apr 2019 00:00:00 +1000</pubDate>
       
       <guid>/publication/scmerge/scmerge/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>scDC</title>
+      <link>/project/scdc/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +1100</pubDate>
+      
+      <guid>/project/scdc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scMerge</title>
+      <link>/project/scmerge/</link>
+      <pubDate>Mon, 29 Oct 2018 00:00:00 +1100</pubDate>
+      
+      <guid>/project/scmerge/</guid>
+      <description>Concerted examination of multiple collections of single cell RNA-Seq (scRNA-Seq) data promises further biological insights that cannot be uncovered with individual datasets. However, such integrative analyses are challenging and require sophisticated methodologies. To enable effective interrogation of multiple scRNA-Seq datasets, we have developed a novel algorithm, named scMerge, that removes unwanted variation by combining stably expressed genes and utilizing pseudo-replicates across datasets. Analysis of large collections of publicly available datasets demonstrates that scMerge performs well in multiple scenarios and enhances biological discovery, including inferring cell developmental trajectories.</description>
+    </item>
+    
+    <item>
       <title>Impact of similarity metrics on single-cell RNA-seq data clustering</title>
       <link>/publication/similarity/</link>
-      <pubDate>Thu, 02 Aug 2018 00:00:00 +0800</pubDate>
+      <pubDate>Thu, 02 Aug 2018 00:00:00 +1000</pubDate>
       
       <guid>/publication/similarity/</guid>
       <description></description>
@@ -42,7 +60,7 @@
     <item>
       <title>Evaluating stably expressed genes in single cells</title>
       <link>/publication/housekeeping/housekeeping/</link>
-      <pubDate>Wed, 06 Dec 2017 00:00:00 +0800</pubDate>
+      <pubDate>Wed, 06 Dec 2017 00:00:00 +1100</pubDate>
       
       <guid>/publication/housekeeping/housekeeping/</guid>
       <description></description>
