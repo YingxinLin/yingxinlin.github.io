@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>scClassify: hierarchical classification of cells</title>
+      <link>/publication/scclassify/</link>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +1000</pubDate>
+      
+      <guid>/publication/scclassify/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>scMerge leverages factor analysis, stable expression, and pseudoreplication to merge multiple single-cell RNA-seq datasets</title>
       <link>/publication/scmerge/scmerge/</link>
       <pubDate>Mon, 15 Apr 2019 00:00:00 +1000</pubDate>
@@ -22,20 +31,20 @@
     </item>
     
     <item>
+      <title>Evaluating stably expressed genes in single cells</title>
+      <link>/publication/housekeeping/housekeeping/</link>
+      <pubDate>Wed, 06 Feb 2019 00:00:00 +1100</pubDate>
+      
+      <guid>/publication/housekeeping/housekeeping/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Impact of similarity metrics on single-cell RNA-seq data clustering</title>
       <link>/publication/similarity/</link>
       <pubDate>Thu, 02 Aug 2018 00:00:00 +1000</pubDate>
       
       <guid>/publication/similarity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Evaluating stably expressed genes in single cells</title>
-      <link>/publication/housekeeping/housekeeping/</link>
-      <pubDate>Wed, 06 Dec 2017 00:00:00 +1100</pubDate>
-      
-      <guid>/publication/housekeeping/housekeeping/</guid>
       <description></description>
     </item>
     

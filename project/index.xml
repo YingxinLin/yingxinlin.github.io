@@ -18,7 +18,7 @@
       <pubDate>Fri, 10 May 2019 00:00:00 +1000</pubDate>
       
       <guid>/project/scclassify/</guid>
-      <description>Recent advances in large scale single cell transcriptome profiling have greatly expanded cell-type specific characterisation of complex biological systems. A critical step in computational analysis of single-cell RNA-sequencing (scRNA-seq) data is to identify cell types from the complex tissues and organs, which is usually achieved by unsupervised clustering followed by manual annotation according to marker gene expression. With the increasing availability of large collections of scRNA-seq datasets generated from the same tissues, organs, and biological systems, as well as the comprehensive human and mouse cell atlases, we are now at the transition point where supervised classification may be trained to accurately classify cell types.</description>
+      <description>Cell type identification is a key computational challenge in single-cell RNA-sequencing (scRNA-seq) data. To capitalize on the large collections of well-annotated scRNAseq datasets, we present scClassify, a hierarchical classification framework based on ensemble learning. scClassify can identify cells from published scRNAseq datasets more accurately and more finely than in the original publications. We also estimate the cell number needed for accurate classification anywhere in a cell type hierarchy.</description>
     </item>
     
     <item>

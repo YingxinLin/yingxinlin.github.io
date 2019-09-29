@@ -4,6 +4,14 @@
     
     <url>
     
+      <loc>/publication/scclassify/</loc>
+      <lastmod>2019-09-06T00:00:00+10:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/talk/ozsinglecell2019/</loc>
       <lastmod>2019-07-22T10:10:00+10:00</lastmod>
     </url>
@@ -30,6 +38,14 @@
     
       <loc>/project/scdc/</loc>
       <lastmod>2019-03-10T00:00:00+11:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/publication/housekeeping/housekeeping/</loc>
+      <lastmod>2019-02-06T00:00:00+11:00</lastmod>
     </url>
     
   
@@ -78,14 +94,6 @@
     
       <loc>/privacy/</loc>
       <lastmod>2018-06-28T00:00:00+10:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication/housekeeping/housekeeping/</loc>
-      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
     </url>
     
   
@@ -142,7 +150,7 @@
     <url>
     
       <loc>/publication_types/3/</loc>
-      <lastmod>2017-12-06T00:00:00+11:00</lastmod>
+      <lastmod>2019-09-06T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -204,7 +212,7 @@
     <url>
     
       <loc>/tags/single-cell/</loc>
-      <lastmod>2019-05-10T00:00:00+10:00</lastmod>
+      <lastmod>2019-09-06T00:00:00+10:00</lastmod>
       <priority>0</priority>
     </url>
     

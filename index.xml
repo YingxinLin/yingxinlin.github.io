@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>scClassify: hierarchical classification of cells</title>
+      <link>/publication/scclassify/</link>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +1000</pubDate>
+      
+      <guid>/publication/scclassify/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>scClassify: Multiscale classification of single cells via cell-type hierarchies based on ensemble learning and sample size estimation.</title>
       <link>/talk/ozsinglecell2019/</link>
       <pubDate>Mon, 22 Jul 2019 10:10:00 +1000</pubDate>
@@ -25,9 +34,7 @@
       <pubDate>Fri, 10 May 2019 00:00:00 +1000</pubDate>
       
       <guid>/project/scclassify/</guid>
-      <description>&lt;p&gt;Recent advances in large scale single cell transcriptome profiling have greatly expanded cell-type specific characterisation of complex biological systems. A critical step in computational analysis of single-cell RNA-sequencing (scRNA-seq) data is to identify cell types from the complex tissues and organs, which is usually achieved by unsupervised clustering followed by manual annotation according to marker gene expression. With the increasing availability of large collections of scRNA-seq datasets generated from the same tissues, organs, and biological systems, as well as the comprehensive human and mouse cell atlases, we are now at the transition point where supervised classification may be trained to accurately classify cell types.&lt;/p&gt;
-
-&lt;p&gt;Here, we propose a multiscale classification framework (scClassify) for single cell classification on a cell type hierarchy. By using ensemble learning to integrate multiple discriminative feature sets extracted from single-cell transcriptomes of external datasets, scClassify effectively annotates cells at different levels of the cell type hierarchy. Furthermore, for a given training dataset, scClassify implements a sample size estimation procedure to determine the number of cells required for accurate cell type classification at a given cell type hierarchy level. By evaluating our algorithm on several collections of scRNA-seq datasets, we found that scClassify has low classification error rates compared to other alternative methods and enables finer cell type identification of scRNA-seq datasets than their original study.&lt;/p&gt;
+      <description>&lt;p&gt;Cell type identification is a key computational challenge in single-cell RNA-sequencing (scRNA-seq) data. To capitalize on the large collections of well-annotated scRNAseq datasets, we present scClassify, a hierarchical classification framework based on ensemble learning. scClassify can identify cells from published scRNAseq datasets more accurately and more finely than in the original publications. We also estimate the cell number needed for accurate classification anywhere in a cell type hierarchy.&lt;/p&gt;
 </description>
     </item>
     
@@ -46,6 +53,15 @@
       <pubDate>Sun, 10 Mar 2019 00:00:00 +1100</pubDate>
       
       <guid>/project/scdc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evaluating stably expressed genes in single cells</title>
+      <link>/publication/housekeeping/housekeeping/</link>
+      <pubDate>Wed, 06 Feb 2019 00:00:00 +1100</pubDate>
+      
+      <guid>/publication/housekeeping/housekeeping/</guid>
       <description></description>
     </item>
     
@@ -103,15 +119,6 @@
       <guid>/privacy/</guid>
       <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Evaluating stably expressed genes in single cells</title>
-      <link>/publication/housekeeping/housekeeping/</link>
-      <pubDate>Wed, 06 Dec 2017 00:00:00 +1100</pubDate>
-      
-      <guid>/publication/housekeeping/housekeeping/</guid>
-      <description></description>
     </item>
     
     <item>

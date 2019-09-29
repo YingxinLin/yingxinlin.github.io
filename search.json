@@ -1,5 +1,35 @@
 [
   {
+    "authors": [
+      "**Y Lin**",
+      "Y Cao",
+      "H J Kim",
+      "A Salim",
+      "T P Speed",
+      "D Lin",
+      "P Yang",
+      "J YH Yang"
+    ],
+    "categories": null,
+    "content": "",
+    "date": 1567692000,
+    "expirydate": -62135596800,
+    "kind": "page",
+    "lang": "en",
+    "lastmod": 1567692000,
+    "objectID": "6c42d39b49ee13448c97a44196145732",
+    "permalink": "/publication/scclassify/",
+    "publishdate": "2019-09-06T00:00:00+10:00",
+    "relpermalink": "/publication/scclassify/",
+    "section": "publication",
+    "summary": "Cell type identification is a key computational challenge in single-cell RNA-sequencing (scRNA-seq) data. To capitalize on the large collections of well-annotated scRNAseq datasets, we present scClassify, a hierarchical classification framework based on ensemble learning. scClassify can identify cells from published scRNAseq datasets more accurately and more finely than in the original publications. We also estimate the cell number needed for accurate classification anywhere in a cell type hierarchy.",
+    "tags": [
+      "Single-cell"
+    ],
+    "title": "scClassify: hierarchical classification of cells",
+    "type": "publication"
+  },
+  {
     "authors": null,
     "categories": null,
     "content": "",
@@ -21,7 +51,7 @@
   {
     "authors": null,
     "categories": null,
-    "content": "Recent advances in large scale single cell transcriptome profiling have greatly expanded cell-type specific characterisation of complex biological systems. A critical step in computational analysis of single-cell RNA-sequencing (scRNA-seq) data is to identify cell types from the complex tissues and organs, which is usually achieved by unsupervised clustering followed by manual annotation according to marker gene expression. With the increasing availability of large collections of scRNA-seq datasets generated from the same tissues, organs, and biological systems, as well as the comprehensive human and mouse cell atlases, we are now at the transition point where supervised classification may be trained to accurately classify cell types.\nHere, we propose a multiscale classification framework (scClassify) for single cell classification on a cell type hierarchy. By using ensemble learning to integrate multiple discriminative feature sets extracted from single-cell transcriptomes of external datasets, scClassify effectively annotates cells at different levels of the cell type hierarchy. Furthermore, for a given training dataset, scClassify implements a sample size estimation procedure to determine the number of cells required for accurate cell type classification at a given cell type hierarchy level. By evaluating our algorithm on several collections of scRNA-seq datasets, we found that scClassify has low classification error rates compared to other alternative methods and enables finer cell type identification of scRNA-seq datasets than their original study.\n",
+    "content": "Cell type identification is a key computational challenge in single-cell RNA-sequencing (scRNA-seq) data. To capitalize on the large collections of well-annotated scRNAseq datasets, we present scClassify, a hierarchical classification framework based on ensemble learning. scClassify can identify cells from published scRNAseq datasets more accurately and more finely than in the original publications. We also estimate the cell number needed for accurate classification anywhere in a cell type hierarchy.\n",
     "date": 1557410400,
     "expirydate": -62135596800,
     "kind": "page",
@@ -32,7 +62,7 @@
     "publishdate": "2019-05-10T00:00:00+10:00",
     "relpermalink": "/project/scclassify/",
     "section": "project",
-    "summary": "Multiscale classification of single cells via cell-type hierarchies based on ensemble learning and sample size estimation.",
+    "summary": "Hierarchical classification of cells",
     "tags": [
       "Single-cell"
     ],
@@ -92,6 +122,36 @@
     ],
     "title": "scDC",
     "type": "project"
+  },
+  {
+    "authors": [
+      "**Y Lin**",
+      "S Ghazanfar",
+      "D Strbenac",
+      "A Wang",
+      "E Patrick",
+      "TP Speed",
+      "P Yang",
+      "J YH Yang"
+    ],
+    "categories": null,
+    "content": "",
+    "date": 1549371600,
+    "expirydate": -62135596800,
+    "kind": "page",
+    "lang": "en",
+    "lastmod": 1549371600,
+    "objectID": "97b3110a914285275538704cedc19026",
+    "permalink": "/publication/housekeeping/housekeeping/",
+    "publishdate": "2019-02-06T00:00:00+11:00",
+    "relpermalink": "/publication/housekeeping/housekeeping/",
+    "section": "publication",
+    "summary": "Single-cell RNA-seq (scRNA-seq) profiling has revealed remarkable variation in transcription, suggesting that expression of many genes at the single-cell level are intrinsically stochastic and noisy. Yet, on cell population level, a subset of genes traditionally referred to as housekeeping genes (HKGs) are found to be stably expressed in different cell and tissue types. It is therefore critical to question whether stably expressed genes (SEGs) can be identified on the single-cell level, and if so, how their expression stability can be assessed? We have developed a computational framework for ranking expression stability of genes in single cells. Here we evaluate the proposed framework and characterize SEGs derived from two scRNA-seq datasets that profile early human and mouse development. Here, we show that gene expression stability indices derived from the early human and mouse development scRNA-seq datasets are highly reproducible and conserved across species. We demonstrate that SEGs identified from single cells based on their stability indices are considerably more stable than HKGs defined previously from cell populations across 10 diverse biological systems. Our analyses indicate that SEGs are inherently more stable at the single-cell level and their characteristics reminiscent of HKGs, suggesting their potential role in sustaining essential functions in individual cells. SEGs identified in this study have immediate utility both for understanding variation/stability of single-cell transcriptomes and for practical applications including scRNA-seq data normalization, the proposed framework can be applied to identify genes with stable expression in other scRNA-seq datasets.",
+    "tags": [
+      "Single-cell"
+    ],
+    "title": "Evaluating stably expressed genes in single cells",
+    "type": "publication"
   },
   {
     "authors": null,
@@ -217,36 +277,6 @@
     "tags": null,
     "title": "Privacy Policy",
     "type": "page"
-  },
-  {
-    "authors": [
-      "**Y Lin**",
-      "S Ghazanfar",
-      "D Strbenac",
-      "A Wang",
-      "E Patrick",
-      "TP Speed",
-      "P Yang",
-      "J YH Yang"
-    ],
-    "categories": null,
-    "content": "",
-    "date": 1512478800,
-    "expirydate": -62135596800,
-    "kind": "page",
-    "lang": "en",
-    "lastmod": 1512478800,
-    "objectID": "97b3110a914285275538704cedc19026",
-    "permalink": "/publication/housekeeping/housekeeping/",
-    "publishdate": "2017-12-06T00:00:00+11:00",
-    "relpermalink": "/publication/housekeeping/housekeeping/",
-    "section": "publication",
-    "summary": "Single-cell RNA-seq (scRNA-seq) profiling has revealed remarkable variation in transcription, suggesting that expression of many genes at the single-cell level are intrinsically stochastic and noisy. Yet, on cell population level, a subset of genes traditionally referred to as housekeeping genes (HKGs) are found to be stably expressed in different cell and tissue types. It is therefore critical to question whether stably expressed genes (SEGs) can be identified on the single-cell level, and if so, how their expression stability can be assessed? We have developed a computational framework for ranking expression stability of genes in single cells. Here we evaluate the proposed framework and characterize SEGs derived from two scRNA-seq datasets that profile early human and mouse development. Here, we show that gene expression stability indices derived from the early human and mouse development scRNA-seq datasets are highly reproducible and conserved across species. We demonstrate that SEGs identified from single cells based on their stability indices are considerably more stable than HKGs defined previously from cell populations across 10 diverse biological systems. Our analyses indicate that SEGs are inherently more stable at the single-cell level and their characteristics reminiscent of HKGs, suggesting their potential role in sustaining essential functions in individual cells. SEGs identified in this study have immediate utility both for understanding variation/stability of single-cell transcriptomes and for practical applications including scRNA-seq data normalization, the proposed framework can be applied to identify genes with stable expression in other scRNA-seq datasets.",
-    "tags": [
-      "Single-cell"
-    ],
-    "title": "Evaluating stably expressed genes in single cells",
-    "type": "publication"
   },
   {
     "authors": [],
