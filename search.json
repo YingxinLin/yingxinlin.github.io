@@ -2,6 +2,143 @@
   {
     "authors": [
       "**Y Lin**",
+      "S Ghazanfar",
+      "K Wang",
+      "JA Gagnon-Bartsch",
+      "KK Lo",
+      "X Su",
+      "ZG Han",
+      "JT Ormerod",
+      "TP Speed",
+      "P Yang",
+      "J YH Yang"
+    ],
+    "categories": null,
+    "content": "",
+    "date": 1577192400,
+    "expirydate": -62135596800,
+    "kind": "page",
+    "lang": "en",
+    "lastmod": 1577192400,
+    "objectID": "71f40534d31f044fe14968aa322874dd",
+    "permalink": "/publication/scmerge/scmerge/",
+    "publishdate": "2019-12-25T00:00:00+11:00",
+    "relpermalink": "/publication/scmerge/scmerge/",
+    "section": "publication",
+    "summary": "Single-cell RNA-sequencing (scRNA-seq) profiling has exploded in recent years and enabled new biological knowledge to be discovered at the single-cell level. Successful and flexible integration of scRNA-Seq datasets from multiple sources promises to be an effective avenue to obtain further biological insights. This study presents a comprehensive approach to integration for scRNA-seq data analysis. It addresses the challenges involved in successful integration of scRNA-seq datasets by using the knowledge of genes that appear not to change across all samples and a robust algorithm to infer pseudoreplicates between datasets. This information is then consolidated into a single-factor model that enables tailored incorporation of prior knowledge. The effectiveness of scMerge is demonstrated by extensive comparison with other approaches.",
+    "tags": [
+      "Single-cell"
+    ],
+    "title": "scMerge leverages factor analysis, stable expression, and pseudoreplication to merge multiple single-cell RNA-seq datasets",
+    "type": "publication"
+  },
+  {
+    "authors": [
+      "Y Cao\u003csup\u003e†\u003c/sup\u003e",
+      "**Y Lin\u003csup\u003e†\u003c/sup\u003e**",
+      "JT Ormerod",
+      "P Yang",
+      "J YH Yang",
+      "KK Lo"
+    ],
+    "categories": null,
+    "content": "",
+    "date": 1577106000,
+    "expirydate": -62135596800,
+    "kind": "page",
+    "lang": "en",
+    "lastmod": 1577106000,
+    "objectID": "a739e20fb023d47e78bbe098d509fcf7",
+    "permalink": "/publication/scdc/",
+    "publishdate": "2019-12-24T00:00:00+11:00",
+    "relpermalink": "/publication/scdc/",
+    "section": "publication",
+    "summary": "We developed a novel single cell differential composition (scDC) analysis method that performs differential cell-type composition analysis via bootstrap resampling. scDC captures the uncertainty associated with cell-type proportions of each subject via bias-corrected and accelerated bootstrap confidence intervals. We assessed the performance of our method using a number of simulated datasets and synthetic datasets curated from publicly available single cell datasets. In simulated datasets, scDC correctly recovered the true cell-type proportions. In synthetic datasets, the cell-type compositions returned by scDC were highly concordant with reference cell-type compositions from the original data. Since the majority of datasets tested in this study have only 2 to 5 subjects per condition, the addition of confidence intervals enabled better comparisons of compositional differences between subjects and across conditions. scDC is a novel statistical method for performing differential cell-type composition analysis for scRNA-seq data. It uses bootstrap resampling to estimate the standard errors associated with cell-type proportion estimates and performs significance testing through GLM and GLMM models. We have made this method available to the scientific community as part of the scdney package (Single Cell Data Integrative Analysis) R package, available from https://github.com/SydneyBioX/scdney.",
+    "tags": [
+      "Single-cell"
+    ],
+    "title": "scDC: single cell differential composition analysis",
+    "type": "publication"
+  },
+  {
+    "authors": null,
+    "categories": null,
+    "content": "",
+    "date": 1576034100,
+    "expirydate": -62135596800,
+    "kind": "page",
+    "lang": "en",
+    "lastmod": 1576034100,
+    "objectID": "1839106959cdf60d489fc469e60894a6",
+    "permalink": "/talk/abacbs2019/",
+    "publishdate": "2019-12-11T14:15:00+11:00",
+    "relpermalink": "/talk/abacbs2019/",
+    "section": "talk",
+    "summary": "",
+    "tags": [],
+    "title": "Sample size estimation and multiscale classification of cells using single and multiple references.",
+    "type": "talk"
+  },
+  {
+    "authors": [
+      "H J Kim\u003csup\u003e†\u003c/sup\u003e",
+      "**Y Lin\u003csup\u003e†\u003c/sup\u003e**",
+      "T A Geddes",
+      "J YH Yang",
+      "P Yang"
+    ],
+    "categories": null,
+    "content": "",
+    "date": 1574600400,
+    "expirydate": -62135596800,
+    "kind": "page",
+    "lang": "en",
+    "lastmod": 1574600400,
+    "objectID": "c6f9e439c5ac797bc529554ee240a0ce",
+    "permalink": "/publication/citefuse/",
+    "publishdate": "2019-11-25T00:00:00+11:00",
+    "relpermalink": "/publication/citefuse/",
+    "section": "publication",
+    "summary": "Multi-modal profiling of single cells represents one of the latest technological advancements in molecular biology. Among various single-cell multi-modal strategies, cellular indexing of transcriptomes and epitopes by sequencing (CITE-seq) allows simultaneous quantification of two distinct species: RNA and surface marker proteins (ADT). Here, we introduce CiteFuse, a streamlined package consisting of a suite of tools for pre-processing, modality integration, clustering, differential RNA and ADT expression analysis, ADT evaluation, ligand-receptor interaction analysis, and interactive web-based visualization of CITE-seq data. We show the capacity of CiteFuse to integrate the two data modalities and its relative advantage against data generated from single modality profiling. Furthermore, we illustrate the pre-processing steps in CiteFuse and in particular a novel doublet detection method based on a combined index of cell hashing and transcriptome data. Collectively, we demonstrate the utility and effectiveness of CiteFuse for the integrative analysis of transcriptome and epitope profiles from CITE-seq data.",
+    "tags": [
+      "Single-cell"
+    ],
+    "title": "CiteFuse enables multi-modal analysis of CITE-seq data",
+    "type": "publication"
+  },
+  {
+    "authors": [
+      "S Ghazanfar",
+      "**Y Lin**",
+      "X Su",
+      "D M Lin",
+      "E Patrick",
+      "Z G Han",
+      "J C Marioni",
+      "J YH Yang"
+    ],
+    "categories": null,
+    "content": "",
+    "date": 1573650000,
+    "expirydate": -62135596800,
+    "kind": "page",
+    "lang": "en",
+    "lastmod": 1573650000,
+    "objectID": "97f1e4b66d8c56c739148f564539b681",
+    "permalink": "/publication/schot/",
+    "publishdate": "2019-11-14T00:00:00+11:00",
+    "relpermalink": "/publication/schot/",
+    "section": "publication",
+    "summary": "Single-cell RNA-sequencing has transformed our ability to examine cell fate choice. For example, in the context of development and differentiation, computational ordering of cells along ‘pseudotime’ enables the expression profiles of individual genes, including key transcription factors, to be examined at fine scale temporal resolution. However, while cell fate decisions are typically marked by profound changes in expression, many such changes are observed in genes downstream of the initial cell fate decision. By contrast, the genes directly involved in the cell fate decision process are likely to interact in subtle ways, potentially resulting in observed changes in patterns of correlation and variation rather than mean expression prior to cell fate commitment. Herein, we describe a novel approach, scHOT – single cell Higher Order Testing - which provides a flexible and statistically robust framework for identifying changes in higher order interactions among genes. scHOT is general and modular in nature, can be run in multiple data contexts such as along a continuous trajectory, between discrete groups, and over spatial orientations; as well as accommodate any higher order measurement such as variability or correlation. We demonstrate the utility of scHOT by studying embryonic development of the liver, where we find coordinated changes in higher order interactions of programs related to differentiation and liver function. We also demonstrate its ability to find subtle changes in gene-gene correlation patterns across space using spatially-resolved expression data from the mouse olfactory bulb. scHOT meaningfully adds to first order effect testing, such as differential expression, and provides a framework for interrogating higher order interactions from single cell data.",
+    "tags": [
+      "Single-cell"
+    ],
+    "title": "Investigating higher order interactions in single cell data with scHOT",
+    "type": "publication"
+  },
+  {
+    "authors": [
+      "**Y Lin**",
       "Y Cao",
       "H J Kim",
       "A Salim",
@@ -68,39 +205,6 @@
     ],
     "title": "scClassify",
     "type": "project"
-  },
-  {
-    "authors": [
-      "**Y Lin**",
-      "S Ghazanfar",
-      "K Wang",
-      "JA Gagnon-Bartsch",
-      "KK Lo",
-      "X Su",
-      "ZG Han",
-      "JT Ormerod",
-      "TP Speed",
-      "P Yang",
-      "J YH Yang"
-    ],
-    "categories": null,
-    "content": "",
-    "date": 1555250400,
-    "expirydate": -62135596800,
-    "kind": "page",
-    "lang": "en",
-    "lastmod": 1555250400,
-    "objectID": "71f40534d31f044fe14968aa322874dd",
-    "permalink": "/publication/scmerge/scmerge/",
-    "publishdate": "2019-04-15T00:00:00+10:00",
-    "relpermalink": "/publication/scmerge/scmerge/",
-    "section": "publication",
-    "summary": "Single-cell RNA-sequencing (scRNA-seq) profiling has exploded in recent years and enabled new biological knowledge to be discovered at the single-cell level. Successful and flexible integration of scRNA-Seq datasets from multiple sources promises to be an effective avenue to obtain further biological insights. This study presents a comprehensive approach to integration for scRNA-seq data analysis. It addresses the challenges involved in successful integration of scRNA-seq datasets by using the knowledge of genes that appear not to change across all samples and a robust algorithm to infer pseudoreplicates between datasets. This information is then consolidated into a single-factor model that enables tailored incorporation of prior knowledge. The effectiveness of scMerge is demonstrated by extensive comparison with other approaches.",
-    "tags": [
-      "Single-cell"
-    ],
-    "title": "scMerge leverages factor analysis, stable expression, and pseudoreplication to merge multiple single-cell RNA-seq datasets",
-    "type": "publication"
   },
   {
     "authors": null,

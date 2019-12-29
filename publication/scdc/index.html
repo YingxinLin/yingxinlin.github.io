@@ -15,10 +15,10 @@
   
     
   
-  <meta name="description" content="Single-cell RNA-sequencing (scRNA-seq) profiling has exploded in recent years and enabled new biological knowledge to be discovered at the single-cell level. Successful and flexible integration of scRNA-Seq datasets from multiple sources promises to be an effective avenue to obtain further biological insights. This study presents a comprehensive approach to integration for scRNA-seq data analysis. It addresses the challenges involved in successful integration of scRNA-seq datasets by using the knowledge of genes that appear not to change across all samples and a robust algorithm to infer pseudoreplicates between datasets. This information is then consolidated into a single-factor model that enables tailored incorporation of prior knowledge. The effectiveness of scMerge is demonstrated by extensive comparison with other approaches.">
+  <meta name="description" content="We developed a novel single cell differential composition (scDC) analysis method that performs differential cell-type composition analysis via bootstrap resampling. scDC captures the uncertainty associated with cell-type proportions of each subject via bias-corrected and accelerated bootstrap confidence intervals. We assessed the performance of our method using a number of simulated datasets and synthetic datasets curated from publicly available single cell datasets. In simulated datasets, scDC correctly recovered the true cell-type proportions. In synthetic datasets, the cell-type compositions returned by scDC were highly concordant with reference cell-type compositions from the original data. Since the majority of datasets tested in this study have only 2 to 5 subjects per condition, the addition of confidence intervals enabled better comparisons of compositional differences between subjects and across conditions. scDC is a novel statistical method for performing differential cell-type composition analysis for scRNA-seq data. It uses bootstrap resampling to estimate the standard errors associated with cell-type proportion estimates and performs significance testing through GLM and GLMM models. We have made this method available to the scientific community as part of the scdney package (Single Cell Data Integrative Analysis) R package, available from https://github.com/SydneyBioX/scdney.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/publication/scmerge/scmerge/">
+  <link rel="alternate" hreflang="en-us" href="/publication/scdc/">
 
   
 
@@ -86,7 +86,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/publication/scmerge/scmerge/">
+  <link rel="canonical" href="/publication/scdc/">
 
   <meta property="twitter:card" content="summary_large_image">
   
@@ -94,14 +94,14 @@
   <meta property="twitter:creator" content="@LinYingxin">
   
   <meta property="og:site_name" content="Yingxin Lin">
-  <meta property="og:url" content="/publication/scmerge/scmerge/">
-  <meta property="og:title" content="scMerge leverages factor analysis, stable expression, and pseudoreplication to merge multiple single-cell RNA-seq datasets | Yingxin Lin">
-  <meta property="og:description" content="Single-cell RNA-sequencing (scRNA-seq) profiling has exploded in recent years and enabled new biological knowledge to be discovered at the single-cell level. Successful and flexible integration of scRNA-Seq datasets from multiple sources promises to be an effective avenue to obtain further biological insights. This study presents a comprehensive approach to integration for scRNA-seq data analysis. It addresses the challenges involved in successful integration of scRNA-seq datasets by using the knowledge of genes that appear not to change across all samples and a robust algorithm to infer pseudoreplicates between datasets. This information is then consolidated into a single-factor model that enables tailored incorporation of prior knowledge. The effectiveness of scMerge is demonstrated by extensive comparison with other approaches.">
+  <meta property="og:url" content="/publication/scdc/">
+  <meta property="og:title" content="scDC: single cell differential composition analysis | Yingxin Lin">
+  <meta property="og:description" content="We developed a novel single cell differential composition (scDC) analysis method that performs differential cell-type composition analysis via bootstrap resampling. scDC captures the uncertainty associated with cell-type proportions of each subject via bias-corrected and accelerated bootstrap confidence intervals. We assessed the performance of our method using a number of simulated datasets and synthetic datasets curated from publicly available single cell datasets. In simulated datasets, scDC correctly recovered the true cell-type proportions. In synthetic datasets, the cell-type compositions returned by scDC were highly concordant with reference cell-type compositions from the original data. Since the majority of datasets tested in this study have only 2 to 5 subjects per condition, the addition of confidence intervals enabled better comparisons of compositional differences between subjects and across conditions. scDC is a novel statistical method for performing differential cell-type composition analysis for scRNA-seq data. It uses bootstrap resampling to estimate the standard errors associated with cell-type proportion estimates and performs significance testing through GLM and GLMM models. We have made this method available to the scientific community as part of the scdney package (Single Cell Data Integrative Analysis) R package, available from https://github.com/SydneyBioX/scdney.">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2019-12-25T00:00:00&#43;11:00">
+  <meta property="article:published_time" content="2019-12-24T00:00:00&#43;11:00">
   
-  <meta property="article:modified_time" content="2019-12-25T00:00:00&#43;11:00">
+  <meta property="article:modified_time" content="2019-12-24T00:00:00&#43;11:00">
   
 
   
@@ -109,7 +109,7 @@
   <script src="https://use.fontawesome.com/dc8f5495c2.js"></script>
 
 
-  <title>scMerge leverages factor analysis, stable expression, and pseudoreplication to merge multiple single-cell RNA-seq datasets | Yingxin Lin</title>
+  <title>scDC: single cell differential composition analysis | Yingxin Lin</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -261,7 +261,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">scMerge leverages factor analysis, stable expression, and pseudoreplication to merge multiple single-cell RNA-seq datasets</h1>
+  <h1 itemprop="name">scDC: single cell differential composition analysis</h1>
 
   
 
@@ -275,37 +275,22 @@
   
   <div>
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name"><strong>Y Lin</strong></span>
+      <span itemprop="name">Y Cao<sup>†</sup></span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">S Ghazanfar</span>
-    </span>, 
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">K Wang</span>
-    </span>, 
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">JA Gagnon-Bartsch</span>
-    </span>, 
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">KK Lo</span>
-    </span>, 
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">X Su</span>
-    </span>, 
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">ZG Han</span>
+      <span itemprop="name"><strong>Y Lin<sup>†</sup></strong></span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
       <span itemprop="name">JT Ormerod</span>
-    </span>, 
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">TP Speed</span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
       <span itemprop="name">P Yang</span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
       <span itemprop="name">J YH Yang</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">KK Lo</span>
     </span>
     
   </div>
@@ -313,9 +298,9 @@
 
   <span class="article-date">
     
-    <meta content="2019-12-25 00:00:00 &#43;1100 AEDT" itemprop="datePublished">
-    <time datetime="2019-12-25 00:00:00 &#43;1100 AEDT" itemprop="dateModified">
-      Dec 25, 2019
+    <meta content="2019-12-24 00:00:00 &#43;1100 AEDT" itemprop="datePublished">
+    <time datetime="2019-12-24 00:00:00 &#43;1100 AEDT" itemprop="dateModified">
+      Dec 24, 2019
     </time>
   </span>
   <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
@@ -335,35 +320,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=scMerge%20leverages%20factor%20analysis%2c%20stable%20expression%2c%20and%20pseudoreplication%20to%20merge%20multiple%20single-cell%20RNA-seq%20datasets&amp;url=%2fpublication%2fscmerge%2fscmerge%2f"
+         href="https://twitter.com/intent/tweet?text=scDC%3a%20single%20cell%20differential%20composition%20analysis&amp;url=%2fpublication%2fscdc%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=%2fpublication%2fscmerge%2fscmerge%2f"
+         href="https://www.facebook.com/sharer.php?u=%2fpublication%2fscdc%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-facebook-f"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpublication%2fscmerge%2fscmerge%2f&amp;title=scMerge%20leverages%20factor%20analysis%2c%20stable%20expression%2c%20and%20pseudoreplication%20to%20merge%20multiple%20single-cell%20RNA-seq%20datasets"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpublication%2fscdc%2f&amp;title=scDC%3a%20single%20cell%20differential%20composition%20analysis"
          target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=%2fpublication%2fscmerge%2fscmerge%2f&amp;title=scMerge%20leverages%20factor%20analysis%2c%20stable%20expression%2c%20and%20pseudoreplication%20to%20merge%20multiple%20single-cell%20RNA-seq%20datasets"
+         href="http://service.weibo.com/share/share.php?url=%2fpublication%2fscdc%2f&amp;title=scDC%3a%20single%20cell%20differential%20composition%20analysis"
          target="_blank" rel="noopener">
         <i class="fab fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=scMerge%20leverages%20factor%20analysis%2c%20stable%20expression%2c%20and%20pseudoreplication%20to%20merge%20multiple%20single-cell%20RNA-seq%20datasets&amp;body=%2fpublication%2fscmerge%2fscmerge%2f">
+         href="mailto:?subject=scDC%3a%20single%20cell%20differential%20composition%20analysis&amp;body=%2fpublication%2fscdc%2f">
         <i class="fas fa-envelope"></i>
       </a>
     </li>
@@ -410,12 +395,6 @@
 
 
 
-  
-  <a class="btn btn-outline-primary my-1 mr-1" href="/project/scmerge/">
-    Project
-  </a>
-  
-
 
 
 
@@ -436,7 +415,7 @@
   
     
   
-  <a class="btn btn-outline-primary my-1 mr-1" href="https://sydneybiox.github.io/scMerge/index.html" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://sydneybiox.github.io/scdney/index.html" target="_blank" rel="noopener">
     <i class="fab fa-github mr-1"></i>
     Github
   </a>
@@ -444,33 +423,15 @@
   
   
   
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1" href="https://www.pnas.org/content/116/20/9775" target="_blank" rel="noopener">
-    <i class="fas fa-file mr-1"></i>
-    Paper
-  </a>
-
-  
-  
-  
-    
-  
   
   
   
   
     
   
-  <a class="btn btn-outline-primary my-1 mr-1" href="/publication/scMerge/scMerge_poster.pdf" >
-    <i class="fas fa-file-powerpoint mr-1"></i>
-    Poster
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://doi.org/10.1186/s12859-019-3211-9" target="_blank" rel="noopener">
+    <i class="fa fa-file mr-1"></i>
+    PDF
   </a>
 
 
@@ -486,7 +447,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Single-cell RNA-sequencing (scRNA-seq) profiling has exploded in recent years and enabled new biological knowledge to be discovered at the single-cell level. Successful and flexible integration of scRNA-Seq datasets from multiple sources promises to be an effective avenue to obtain further biological insights. This study presents a comprehensive approach to integration for scRNA-seq data analysis. It addresses the challenges involved in successful integration of scRNA-seq datasets by using the knowledge of genes that appear not to change across all samples and a robust algorithm to infer pseudoreplicates between datasets. This information is then consolidated into a single-factor model that enables tailored incorporation of prior knowledge. The effectiveness of scMerge is demonstrated by extensive comparison with other approaches.</p>
+    <p class="pub-abstract" itemprop="text">We developed a novel single cell differential composition (scDC) analysis method that performs differential cell-type composition analysis via bootstrap resampling. scDC captures the uncertainty associated with cell-type proportions of each subject via bias-corrected and accelerated bootstrap confidence intervals. We assessed the performance of our method using a number of simulated datasets and synthetic datasets curated from publicly available single cell datasets. In simulated datasets, scDC correctly recovered the true cell-type proportions. In synthetic datasets, the cell-type compositions returned by scDC were highly concordant with reference cell-type compositions from the original data. Since the majority of datasets tested in this study have only 2 to 5 subjects per condition, the addition of confidence intervals enabled better comparisons of compositional differences between subjects and across conditions. scDC is a novel statistical method for performing differential cell-type composition analysis for scRNA-seq data. It uses bootstrap resampling to estimate the standard errors associated with cell-type proportion estimates and performs significance testing through GLM and GLMM models. We have made this method available to the scientific community as part of the scdney package (Single Cell Data Integrative Analysis) R package, available from <a href="https://github.com/SydneyBioX/scdney" target="_blank">https://github.com/SydneyBioX/scdney</a>.</p>
     
 
     
@@ -515,7 +476,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">In <strong>PNAS</strong>.</div>
+          <div class="col-12 col-md-9">In <strong>BMC Bioinformatics</strong>.</div>
         </div>
       </div>
       <div class="col-md-1"></div>

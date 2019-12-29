@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Fri, 06 Sep 2019 00:00:00 +1000</lastBuildDate>
+    <lastBuildDate>Mon, 25 Nov 2019 00:00:00 +1100</lastBuildDate>
     
 	<atom:link href="/publication_types/3/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CiteFuse enables multi-modal analysis of CITE-seq data</title>
+      <link>/publication/citefuse/</link>
+      <pubDate>Mon, 25 Nov 2019 00:00:00 +1100</pubDate>
+      
+      <guid>/publication/citefuse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Investigating higher order interactions in single cell data with scHOT</title>
+      <link>/publication/schot/</link>
+      <pubDate>Thu, 14 Nov 2019 00:00:00 +1100</pubDate>
+      
+      <guid>/publication/schot/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>scClassify: hierarchical classification of cells</title>

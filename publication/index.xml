@@ -13,20 +13,47 @@
     
     
     <item>
+      <title>scMerge leverages factor analysis, stable expression, and pseudoreplication to merge multiple single-cell RNA-seq datasets</title>
+      <link>/publication/scmerge/scmerge/</link>
+      <pubDate>Wed, 25 Dec 2019 00:00:00 +1100</pubDate>
+      
+      <guid>/publication/scmerge/scmerge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scDC: single cell differential composition analysis</title>
+      <link>/publication/scdc/</link>
+      <pubDate>Tue, 24 Dec 2019 00:00:00 +1100</pubDate>
+      
+      <guid>/publication/scdc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CiteFuse enables multi-modal analysis of CITE-seq data</title>
+      <link>/publication/citefuse/</link>
+      <pubDate>Mon, 25 Nov 2019 00:00:00 +1100</pubDate>
+      
+      <guid>/publication/citefuse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Investigating higher order interactions in single cell data with scHOT</title>
+      <link>/publication/schot/</link>
+      <pubDate>Thu, 14 Nov 2019 00:00:00 +1100</pubDate>
+      
+      <guid>/publication/schot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>scClassify: hierarchical classification of cells</title>
       <link>/publication/scclassify/</link>
       <pubDate>Fri, 06 Sep 2019 00:00:00 +1000</pubDate>
       
       <guid>/publication/scclassify/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>scMerge leverages factor analysis, stable expression, and pseudoreplication to merge multiple single-cell RNA-seq datasets</title>
-      <link>/publication/scmerge/scmerge/</link>
-      <pubDate>Mon, 15 Apr 2019 00:00:00 +1000</pubDate>
-      
-      <guid>/publication/scmerge/scmerge/</guid>
       <description></description>
     </item>
     

@@ -15,10 +15,10 @@
   
     
   
-  <meta name="description" content="Single-cell RNA-sequencing (scRNA-seq) profiling has exploded in recent years and enabled new biological knowledge to be discovered at the single-cell level. Successful and flexible integration of scRNA-Seq datasets from multiple sources promises to be an effective avenue to obtain further biological insights. This study presents a comprehensive approach to integration for scRNA-seq data analysis. It addresses the challenges involved in successful integration of scRNA-seq datasets by using the knowledge of genes that appear not to change across all samples and a robust algorithm to infer pseudoreplicates between datasets. This information is then consolidated into a single-factor model that enables tailored incorporation of prior knowledge. The effectiveness of scMerge is demonstrated by extensive comparison with other approaches.">
+  <meta name="description" content="Multi-modal profiling of single cells represents one of the latest technological advancements in molecular biology. Among various single-cell multi-modal strategies, cellular indexing of transcriptomes and epitopes by sequencing (CITE-seq) allows simultaneous quantification of two distinct species: RNA and surface marker proteins (ADT). Here, we introduce CiteFuse, a streamlined package consisting of a suite of tools for pre-processing, modality integration, clustering, differential RNA and ADT expression analysis, ADT evaluation, ligand-receptor interaction analysis, and interactive web-based visualization of CITE-seq data. We show the capacity of CiteFuse to integrate the two data modalities and its relative advantage against data generated from single modality profiling. Furthermore, we illustrate the pre-processing steps in CiteFuse and in particular a novel doublet detection method based on a combined index of cell hashing and transcriptome data. Collectively, we demonstrate the utility and effectiveness of CiteFuse for the integrative analysis of transcriptome and epitope profiles from CITE-seq data.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/publication/scmerge/scmerge/">
+  <link rel="alternate" hreflang="en-us" href="/preprint/citefuse/">
 
   
 
@@ -86,7 +86,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/publication/scmerge/scmerge/">
+  <link rel="canonical" href="/preprint/citefuse/">
 
   <meta property="twitter:card" content="summary_large_image">
   
@@ -94,14 +94,14 @@
   <meta property="twitter:creator" content="@LinYingxin">
   
   <meta property="og:site_name" content="Yingxin Lin">
-  <meta property="og:url" content="/publication/scmerge/scmerge/">
-  <meta property="og:title" content="scMerge leverages factor analysis, stable expression, and pseudoreplication to merge multiple single-cell RNA-seq datasets | Yingxin Lin">
-  <meta property="og:description" content="Single-cell RNA-sequencing (scRNA-seq) profiling has exploded in recent years and enabled new biological knowledge to be discovered at the single-cell level. Successful and flexible integration of scRNA-Seq datasets from multiple sources promises to be an effective avenue to obtain further biological insights. This study presents a comprehensive approach to integration for scRNA-seq data analysis. It addresses the challenges involved in successful integration of scRNA-seq datasets by using the knowledge of genes that appear not to change across all samples and a robust algorithm to infer pseudoreplicates between datasets. This information is then consolidated into a single-factor model that enables tailored incorporation of prior knowledge. The effectiveness of scMerge is demonstrated by extensive comparison with other approaches.">
+  <meta property="og:url" content="/preprint/citefuse/">
+  <meta property="og:title" content="CiteFuse enables multi-modal analysis of CITE-seq data | Yingxin Lin">
+  <meta property="og:description" content="Multi-modal profiling of single cells represents one of the latest technological advancements in molecular biology. Among various single-cell multi-modal strategies, cellular indexing of transcriptomes and epitopes by sequencing (CITE-seq) allows simultaneous quantification of two distinct species: RNA and surface marker proteins (ADT). Here, we introduce CiteFuse, a streamlined package consisting of a suite of tools for pre-processing, modality integration, clustering, differential RNA and ADT expression analysis, ADT evaluation, ligand-receptor interaction analysis, and interactive web-based visualization of CITE-seq data. We show the capacity of CiteFuse to integrate the two data modalities and its relative advantage against data generated from single modality profiling. Furthermore, we illustrate the pre-processing steps in CiteFuse and in particular a novel doublet detection method based on a combined index of cell hashing and transcriptome data. Collectively, we demonstrate the utility and effectiveness of CiteFuse for the integrative analysis of transcriptome and epitope profiles from CITE-seq data.">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2019-12-25T00:00:00&#43;11:00">
+  <meta property="article:published_time" content="2019-11-25T00:00:00&#43;11:00">
   
-  <meta property="article:modified_time" content="2019-12-25T00:00:00&#43;11:00">
+  <meta property="article:modified_time" content="2019-11-25T00:00:00&#43;11:00">
   
 
   
@@ -109,7 +109,7 @@
   <script src="https://use.fontawesome.com/dc8f5495c2.js"></script>
 
 
-  <title>scMerge leverages factor analysis, stable expression, and pseudoreplication to merge multiple single-cell RNA-seq datasets | Yingxin Lin</title>
+  <title>CiteFuse enables multi-modal analysis of CITE-seq data | Yingxin Lin</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -240,7 +240,8 @@
   </div>
 </nav>
 
-<div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
 
   
 
@@ -261,7 +262,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">scMerge leverages factor analysis, stable expression, and pseudoreplication to merge multiple single-cell RNA-seq datasets</h1>
+  <h1 itemprop="name">CiteFuse enables multi-modal analysis of CITE-seq data</h1>
 
   
 
@@ -275,37 +276,19 @@
   
   <div>
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name"><strong>Y Lin</strong></span>
+      <span itemprop="name">H J Kim<sup>†</sup></span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">S Ghazanfar</span>
+      <span itemprop="name"><strong>Y Lin<sup>†</sup></strong></span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">K Wang</span>
-    </span>, 
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">JA Gagnon-Bartsch</span>
-    </span>, 
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">KK Lo</span>
-    </span>, 
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">X Su</span>
-    </span>, 
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">ZG Han</span>
-    </span>, 
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">JT Ormerod</span>
-    </span>, 
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">TP Speed</span>
-    </span>, 
-    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">P Yang</span>
+      <span itemprop="name">T A Geddes</span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
       <span itemprop="name">J YH Yang</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">P Yang</span>
     </span>
     
   </div>
@@ -313,9 +296,9 @@
 
   <span class="article-date">
     
-    <meta content="2019-12-25 00:00:00 &#43;1100 AEDT" itemprop="datePublished">
-    <time datetime="2019-12-25 00:00:00 &#43;1100 AEDT" itemprop="dateModified">
-      Dec 25, 2019
+    <meta content="2019-11-25 00:00:00 &#43;1100 AEDT" itemprop="datePublished">
+    <time datetime="2019-11-25 00:00:00 &#43;1100 AEDT" itemprop="dateModified">
+      Nov 25, 2019
     </time>
   </span>
   <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
@@ -335,35 +318,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=scMerge%20leverages%20factor%20analysis%2c%20stable%20expression%2c%20and%20pseudoreplication%20to%20merge%20multiple%20single-cell%20RNA-seq%20datasets&amp;url=%2fpublication%2fscmerge%2fscmerge%2f"
+         href="https://twitter.com/intent/tweet?text=CiteFuse%20enables%20multi-modal%20analysis%20of%20CITE-seq%20data&amp;url=%2fpreprint%2fcitefuse%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=%2fpublication%2fscmerge%2fscmerge%2f"
+         href="https://www.facebook.com/sharer.php?u=%2fpreprint%2fcitefuse%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-facebook-f"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpublication%2fscmerge%2fscmerge%2f&amp;title=scMerge%20leverages%20factor%20analysis%2c%20stable%20expression%2c%20and%20pseudoreplication%20to%20merge%20multiple%20single-cell%20RNA-seq%20datasets"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpreprint%2fcitefuse%2f&amp;title=CiteFuse%20enables%20multi-modal%20analysis%20of%20CITE-seq%20data"
          target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=%2fpublication%2fscmerge%2fscmerge%2f&amp;title=scMerge%20leverages%20factor%20analysis%2c%20stable%20expression%2c%20and%20pseudoreplication%20to%20merge%20multiple%20single-cell%20RNA-seq%20datasets"
+         href="http://service.weibo.com/share/share.php?url=%2fpreprint%2fcitefuse%2f&amp;title=CiteFuse%20enables%20multi-modal%20analysis%20of%20CITE-seq%20data"
          target="_blank" rel="noopener">
         <i class="fab fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=scMerge%20leverages%20factor%20analysis%2c%20stable%20expression%2c%20and%20pseudoreplication%20to%20merge%20multiple%20single-cell%20RNA-seq%20datasets&amp;body=%2fpublication%2fscmerge%2fscmerge%2f">
+         href="mailto:?subject=CiteFuse%20enables%20multi-modal%20analysis%20of%20CITE-seq%20data&amp;body=%2fpreprint%2fcitefuse%2f">
         <i class="fas fa-envelope"></i>
       </a>
     </li>
@@ -410,12 +393,6 @@
 
 
 
-  
-  <a class="btn btn-outline-primary my-1 mr-1" href="/project/scmerge/">
-    Project
-  </a>
-  
-
 
 
 
@@ -436,7 +413,7 @@
   
     
   
-  <a class="btn btn-outline-primary my-1 mr-1" href="https://sydneybiox.github.io/scMerge/index.html" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://sydneybiox.github.io/CiteFuse/index.html" target="_blank" rel="noopener">
     <i class="fab fa-github mr-1"></i>
     Github
   </a>
@@ -444,33 +421,15 @@
   
   
   
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1" href="https://www.pnas.org/content/116/20/9775" target="_blank" rel="noopener">
-    <i class="fas fa-file mr-1"></i>
-    Paper
-  </a>
-
-  
-  
-  
-    
-  
   
   
   
   
     
   
-  <a class="btn btn-outline-primary my-1 mr-1" href="/publication/scMerge/scMerge_poster.pdf" >
-    <i class="fas fa-file-powerpoint mr-1"></i>
-    Poster
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://doi.org/10.1101/854299" target="_blank" rel="noopener">
+    <i class="ai ai-biorxiv mr-1"></i>
+    PDF
   </a>
 
 
@@ -484,62 +443,9 @@
 
   <div class="article-container">
 
-    
-    <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Single-cell RNA-sequencing (scRNA-seq) profiling has exploded in recent years and enabled new biological knowledge to be discovered at the single-cell level. Successful and flexible integration of scRNA-Seq datasets from multiple sources promises to be an effective avenue to obtain further biological insights. This study presents a comprehensive approach to integration for scRNA-seq data analysis. It addresses the challenges involved in successful integration of scRNA-seq datasets by using the knowledge of genes that appear not to change across all samples and a robust algorithm to infer pseudoreplicates between datasets. This information is then consolidated into a single-factor model that enables tailored incorporation of prior knowledge. The effectiveness of scMerge is demonstrated by extensive comparison with other approaches.</p>
-    
-
-    
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Type</div>
-          <div class="col-12 col-md-9">
-            
-            <a href="/publication/#2">
-              Journal article
-            </a>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
+    <div class="article-style" itemprop="articleBody">
+      
     </div>
-    <div class="d-md-none space-below"></div>
-    
-
-    
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">In <strong>PNAS</strong>.</div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
-    
-
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Date</div>
-          <div class="col-12 col-md-9" itemprop="datePublished">
-            December, 2019
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-sm-none space-below"></div>
-
-    <div class="space-below"></div>
-
-    <div class="article-style"></div>
 
     
 
@@ -564,10 +470,34 @@
 
 
 
+    
+    
+    <div class="article-widget">
+      <div class="hr-light"></div>
+      <h3>Related</h3>
+      <ul>
+        
+        <li><a href="/publication/citefuse/">CiteFuse enables multi-modal analysis of CITE-seq data</a></li>
+        
+        <li><a href="/preprint/scclassify/">scClassify: hierarchical classification of cells</a></li>
+        
+        <li><a href="/publication/scclassify/">scClassify: hierarchical classification of cells</a></li>
+        
+        <li><a href="/project/scclassify/">scClassify</a></li>
+        
+        <li><a href="/publication/scmerge/scmerge/">scMerge leverages factor analysis, stable expression, and pseudoreplication to merge multiple single-cell RNA-seq datasets</a></li>
+        
+      </ul>
+    </div>
+    
+
+    
+
+    
+
+
   </div>
-</div>
-
-
+</article>
 
 <div class="container">
   <footer class="site-footer">
