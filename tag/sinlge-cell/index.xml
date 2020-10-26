@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sinlge-cell | Yingxin Lin</title>
+    <link>/tag/sinlge-cell/</link>
+      <atom:link href="/tag/sinlge-cell/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sinlge-cell</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 13 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Sinlge-cell</title>
+      <link>/tag/sinlge-cell/</link>
+    </image>
+    
+    <item>
+      <title>Investigating higher-order interactions in single-cell data with scHOT</title>
+      <link>/publication/schot/</link>
+      <pubDate>Mon, 13 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/schot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scClassify: sample size estimation and multiscale classification of cells using single and multiple reference</title>
+      <link>/publication/scclassify/scclassify/</link>
+      <pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/scclassify/scclassify/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CiteFuse enables multi-modal analysis of CITE-seq data</title>
+      <link>/publication/citefuse/</link>
+      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/citefuse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evaluating stably expressed genes in single cells</title>
+      <link>/publication/seg/</link>
+      <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/seg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scMerge leverages factor analysis, stable expression, and pseudoreplication to merge multiple single-cell RNA-seq datasets</title>
+      <link>/publication/scmerge/scmerge/</link>
+      <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/scmerge/scmerge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scDC: single cell differential composition analysis</title>
+      <link>/publication/scdc/</link>
+      <pubDate>Tue, 24 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/scdc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Impact of similarity metrics on single-cell RNA-seq data clustering</title>
+      <link>/publication/similarity/</link>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/similarity/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

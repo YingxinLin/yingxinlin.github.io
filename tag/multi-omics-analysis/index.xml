@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Multi-omics analysis | Yingxin Lin</title>
+    <link>/tag/multi-omics-analysis/</link>
+      <atom:link href="/tag/multi-omics-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <description>Multi-omics analysis</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 30 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hubac6f24c8653994461d9d2f1603b1cf3_3281_512x512_fill_lanczos_center_2.png</url>
+      <title>Multi-omics analysis</title>
+      <link>/tag/multi-omics-analysis/</link>
+    </image>
+    
+    <item>
+      <title>CiteFuse enables multi-modal analysis of CITE-seq data</title>
+      <link>/publication/citefuse/</link>
+      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/citefuse/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

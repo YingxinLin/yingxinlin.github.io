@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>S Ghazanfar | Yingxin Lin</title>
+    <link>/author/s-ghazanfar/</link>
+      <atom:link href="/author/s-ghazanfar/index.xml" rel="self" type="application/rss+xml" />
+    <description>S Ghazanfar</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 25 Dec 2019 00:00:00 +1100</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>S Ghazanfar</title>
+      <link>/author/s-ghazanfar/</link>
+    </image>
+    
+    <item>
+      <title>scMerge leverages factor analysis, stable expression, and pseudoreplication to merge multiple single-cell RNA-seq datasets</title>
+      <link>/publication/scmerge/scmerge/</link>
+      <pubDate>Wed, 25 Dec 2019 00:00:00 +1100</pubDate>
+      <guid>/publication/scmerge/scmerge/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

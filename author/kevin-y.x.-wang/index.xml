@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kevin Y.X. Wang | Yingxin Lin</title>
+    <link>/author/kevin-y.x.-wang/</link>
+      <atom:link href="/author/kevin-y.x.-wang/index.xml" rel="self" type="application/rss+xml" />
+    <description>Kevin Y.X. Wang</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 25 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hubac6f24c8653994461d9d2f1603b1cf3_3281_512x512_fill_lanczos_center_2.png</url>
+      <title>Kevin Y.X. Wang</title>
+      <link>/author/kevin-y.x.-wang/</link>
+    </image>
+    
+    <item>
+      <title>scMerge leverages factor analysis, stable expression, and pseudoreplication to merge multiple single-cell RNA-seq datasets</title>
+      <link>/publication/scmerge/scmerge/</link>
+      <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/scmerge/scmerge/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
