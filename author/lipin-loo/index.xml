@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lipin Loo | Yingxin Lin</title>
+    <link>/author/lipin-loo/</link>
+      <atom:link href="/author/lipin-loo/index.xml" rel="self" type="application/rss+xml" />
+    <description>Lipin Loo</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hubac6f24c8653994461d9d2f1603b1cf3_3281_512x512_fill_lanczos_center_2.png</url>
+      <title>Lipin Loo</title>
+      <link>/author/lipin-loo/</link>
+    </image>
+    
+    <item>
+      <title>Characterization of cell-cell communication in COVID-19 patients</title>
+      <link>/publication/covid_cci/</link>
+      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/covid_cci/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

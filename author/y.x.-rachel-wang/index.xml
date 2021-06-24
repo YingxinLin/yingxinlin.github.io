@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Y.X. Rachel Wang | Yingxin Lin</title>
+    <link>/author/y.x.-rachel-wang/</link>
+      <atom:link href="/author/y.x.-rachel-wang/index.xml" rel="self" type="application/rss+xml" />
+    <description>Y.X. Rachel Wang</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hubac6f24c8653994461d9d2f1603b1cf3_3281_512x512_fill_lanczos_center_2.png</url>
+      <title>Y.X. Rachel Wang</title>
+      <link>/author/y.x.-rachel-wang/</link>
+    </image>
+    
+    <item>
+      <title>scJoint: transfer learning for data integration of atlas-scale single-cell RNA-seq and ATAC-seq</title>
+      <link>/publication/scjoint/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>/publication/scjoint/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
