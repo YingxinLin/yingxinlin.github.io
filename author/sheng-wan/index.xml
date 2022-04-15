@@ -5,7 +5,7 @@
     <link>/author/sheng-wan/</link>
       <atom:link href="/author/sheng-wan/index.xml" rel="self" type="application/rss+xml" />
     <description>Sheng Wan</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 20 Jan 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hubac6f24c8653994461d9d2f1603b1cf3_3281_512x512_fill_lanczos_center_2.png</url>
       <title>Sheng Wan</title>
@@ -15,7 +15,7 @@
     <item>
       <title>scJoint: transfer learning for data integration of atlas-scale single-cell RNA-seq and ATAC-seq</title>
       <link>/publication/scjoint/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 20 Jan 2022 00:00:00 +0000</pubDate>
       <guid>/publication/scjoint/</guid>
       <description></description>
     </item>
