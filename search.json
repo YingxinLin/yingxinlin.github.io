@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Yingxin Lin",
     "section": "",
-    "text": "Twitter\n  \n  \n    \n     Github\n  \n  \n    \n     Scholar\n  \n\n\n\n\nI am a Postdoctoral research associate at the University of Sydney. I completed my PhD in Statistics under the supervision of Prof. Jean Yang, Dr. Rachel Wang and A/Prof. John Ormerod at the University of Sydney in 2022. I am a member of the School of Mathematics and Statistics and Sydney Precision Data Science Centre. My research interests lie broadly in statistical modelling and machine learning for various omics, biomedical and clinical data, specifically focusing on methodological development and data analysis for single-cell omics data.\n\n\n\nEducation\n PhD in Statistics, 2022. The University of Sydney.\n BSc (Advanced Mathematics) (Honours) in Statistics and Mathematics, 2017. The University of Sydney.\n\n\nInterests\n\nApplied statistics\nBiomedical data science\nStatistical bioinformatics\nSingle-cell analysis"
+    "text": "Twitter\n  \n  \n    \n     Github\n  \n  \n    \n     Scholar\n  \n  \n    \n     Contact\n  \n\n\n\n\nI am a Postdoctoral research associate at the University of Sydney. I completed my PhD in Statistics under the supervision of Prof. Jean Yang, Dr. Rachel Wang and A/Prof. John Ormerod at the University of Sydney in 2022. I am a member of the School of Mathematics and Statistics and Sydney Precision Data Science Centre. My research interests lie broadly in statistical modelling and machine learning for various omics, biomedical and clinical data, specifically focusing on methodological development and data analysis for single-cell omics data.\n\n\n\n\nEducation\n PhD in Statistics, 2022. The University of Sydney.\n BSc (Advanced Mathematics) (Honours) in Statistics and Mathematics, 2017. The University of Sydney.\n\n\nInterests\n\nApplied statistics\nBiomedical data science\nStatistical bioinformatics\nSingle-cell analysis"
   },
   {
     "objectID": "about.html",
@@ -25,7 +25,7 @@
     "href": "publication.html",
     "title": "Publications",
     "section": "",
-    "text": "†: Co-first/co-last author\n\n\n\n\n\nLin, Y., Cao, Y., Willie, E., Patrick, E., Yang, J.Y.H. (2022) Atlas-scale single-cell multi-sample multi-condition data integration using scMerge2.[paper]\nYin, D., Cao, Y., Chen, J., Mak, C.L.Yl, Yu, K.H.O., Lin, Y. †, Ho, J. W. K. †, Yang, J.Y.H. †. (2022) Covidscope: An atlas-scale COVID-19 resource for single-cell meta analysis at sample and cell levels. [paper]\n\n\n\n\n\nLin, Y.†, Wu, T.Y.†, Wan, S., Yang, J.Y.H., Wong, W.H., and Wang, Y.X.R.(2022) scJoint: transfer learning for data integration of single-cell RNA-seq and ATAC-seq. Nature Biotechnology. [package][paper]\nLin, Y., Loo, L., Tran, A., Moreno, C., Hesselson D., Neely, G., and Yang, J.Y.H. (2022) Characterization of cell-cell communication in COVID-19 patients. PLoS Computational Biology. [paper]\nCao, Y., Lin, Y., Patrick, E., Yang, P., and Yang, J.Y.H. (2022) scFeatures: Multi-view representations of single-cell and spatial data for disease outcome prediction. Bioinformatics. [package][paper]\nKim, H.J., Wang, K.Y., Chen, C., Lin, Y., Tam, P., Lin, D.M., Yang, J.Y.H. and Yang, P. (2021) Uncovering cell identity through differential stability with Cepo. Nature Computational Science. [package][paper]\nGhazanfar, S., Lin, Y., Su, X., Lin, D.M., Patrick, E., Han, Z.G., Marioni, J.C., and Yang, J.Y.H. (2020) Investigating higher-order interactions in single-cell data with scHOT. Nature Methods. [package][paper]\nLin, Y., Cao, Y., Kim, H.J., Salim, A., Speed, T., Lin, D.M., Yang, P. and Yang, J.Y.H. (2020) scClassify: sample size estimation and multiscale classification of cells using single and multiple reference. Molecular Systems Biology. [package][shiny][paper] \nKim, H.J.†, Lin, Y.†, Geddes, T.A., Yang, J.Y.H. and Yang, P. (2020) CiteFuse enables multi-modal analysis of CITE-seq data. Bioinformatics. [package][shiny][paper]\nLin, Y., Ghazanfar, S., Wang, K.Y., Gagnon-Bartsch, J.A., Lo, K.K., Su, X., Han, Z.G., Ormerod, J.T., Speed, T.P., Yang, P. and Yang, J.Y.H. (2019) scMerge leverages factor analysis, stable expression, and pseudoreplication to merge multiple single-cell RNA-seq datasets. Proceedings of the National Academy of Sciences. [package] [paper]\nLin, Y., Ghazanfar, S., Strbenac, D., Wang, A., Patrick, E., Lin, D., Speed, T., Yang, J.Y.H. & Yang, P. (2019) Evaluating stably expressed genes in single cells. GigaScience. [package] [paper]\nCao, Y.†, Lin, Y.†, Ormerod, J., Yang, P., Yang, J.Y.H. & Lo, K. (2019) scDC: single cell differential composition analysis. BMC Bioinformatics. [package] [paper]\n\n\n\n\n\n\n\n\nHe, J.†, Lin, Y.†, Meng M., Li J., Yang, J.Y.H., Wang H. (2021) Construction of a human cell landscape of COVID-19 infection at single-cell level. Aging and disease. [paper]\nSu, X., Zhao, L., Shi, Y., Zhang, R., Long, Q., Bai, S., Luo, Q., Lin, Y., Zou, X., Ghazanfar, S. and Tao, K., … & Han, Z.G. (2021) Clonal evolution in liver cancer at single-cell and single-variant resolution. Journal of hematology & oncology.[paper]\nSu, X., Long, Q., Bo, J., Shi, Y., Zhao, L.N., Lin Y., Luo, Q., Ghazanfar, S., Zhang, C., Liu, Q., Wang, L., He, K., He, J., Cui, X., Yang, J.Y.H., Han, Z.G., Yang, G., and Sha, J.J. (2020) Mutational and transcriptomic landscapes of a rare human prostate basal cell carcinoma. The Prostate. [paper]\n\n\n\n\n\nLin, Y., Teixeira-Pinto, A., Opdam, H., Chapman, J. R., Craig, J. C., Rogers, N., … & Wong, G. (2022) Nonutilization of Kidneys From Donors After Circulatory Determinant of Death. Transplantation Direct. [paper]"
+    "text": "†: Co-first/co-last author"
   },
   {
     "objectID": "projects.html",
@@ -47,5 +47,68 @@
     "title": "Research",
     "section": "Multi-modal data analysis",
     "text": "Multi-modal data analysis\n\nCiteFuse\n  Multi-modal profiling of single cells represents one of the latest technological advancements in molecular biology. Among various single-cell multi-modal strategies, cellular indexing of transcriptomes and epitopes by sequencing (CITE-seq) allows simultaneous quantification of two distinct species: RNA and cell-surface proteins. Here, we introduce CiteFuse, a streamlined package consisting of a suite of tools for doublet detection, modality integration, clustering, differential RNA and protein expression analysis, antibody-derived tag evaluation, ligand–receptor interaction analysis and interactive web-based visualization of CITE-seq data. We demonstrate the capacity of CiteFuse to integrate the two data modalities and its relative advantage against data generated from single-modality profiling using both simulations and real-world CITE-seq data. Furthermore, we illustrate a novel doublet detection method based on a combined index of cell hashing and transcriptome data. Finally, we demonstrate CiteFuse for predicting ligand–receptor interactions by using multi-modal CITE-seq data. Collectively, we demonstrate the utility and effectiveness of CiteFuse for the integrative analysis of transcriptome and epitope profiles from CITE-seq data.\n\nGithub: https://github.com/SydneyBioX/CiteFuse\nReference: Kim, H.J., Lin, Y., Geddes, T.A., Yang, J.Y.H. and Yang, P. (2020) CiteFuse enables multi-modal analysis of CITE-seq data. Bioinformatics."
+  },
+  {
+    "objectID": "publication.html#methodologies-and-tools",
+    "href": "publication.html#methodologies-and-tools",
+    "title": "Publications",
+    "section": "Methodologies and tools",
+    "text": "Methodologies and tools\n\nPreprint\n\nLin, Y., Cao, Y., Willie, E., Patrick, E., Yang, J.Y.H. (2022) Atlas-scale single-cell multi-sample multi-condition data integration using scMerge2.[paper]\nYin, D., Cao, Y., Chen, J., Mak, C.L.Yl, Yu, K.H.O., Lin, Y. †, Ho, J. W. K. †, Yang, J.Y.H. †. (2022) Covidscope: An atlas-scale COVID-19 resource for single-cell meta analysis at sample and cell levels. [paper]\n\n\n\nPublication\n\nLin, Y.†, Wu, T.Y.†, Wan, S., Yang, J.Y.H., Wong, W.H., and Wang, Y.X.R.(2022) scJoint: transfer learning for data integration of single-cell RNA-seq and ATAC-seq. Nature Biotechnology. [package][paper]\nLin, Y., Loo, L., Tran, A., Moreno, C., Hesselson D., Neely, G., and Yang, J.Y.H. (2022) Characterization of cell-cell communication in COVID-19 patients. PLoS Computational Biology. [paper]\nCao, Y., Lin, Y., Patrick, E., Yang, P., and Yang, J.Y.H. (2022) scFeatures: Multi-view representations of single-cell and spatial data for disease outcome prediction. Bioinformatics. [package][paper]\nKim, H.J., Wang, K.Y., Chen, C., Lin, Y., Tam, P., Lin, D.M., Yang, J.Y.H. and Yang, P. (2021) Uncovering cell identity through differential stability with Cepo. Nature Computational Science. [package][paper]\nGhazanfar, S., Lin, Y., Su, X., Lin, D.M., Patrick, E., Han, Z.G., Marioni, J.C., and Yang, J.Y.H. (2020) Investigating higher-order interactions in single-cell data with scHOT. Nature Methods. [package][paper]\nLin, Y., Cao, Y., Kim, H.J., Salim, A., Speed, T., Lin, D.M., Yang, P. and Yang, J.Y.H. (2020) scClassify: sample size estimation and multiscale classification of cells using single and multiple reference. Molecular Systems Biology. [package][shiny][paper] \nKim, H.J.†, Lin, Y.†, Geddes, T.A., Yang, J.Y.H. and Yang, P. (2020) CiteFuse enables multi-modal analysis of CITE-seq data. Bioinformatics. [package][shiny][paper]\nLin, Y., Ghazanfar, S., Wang, K.Y., Gagnon-Bartsch, J.A., Lo, K.K., Su, X., Han, Z.G., Ormerod, J.T., Speed, T.P., Yang, P. and Yang, J.Y.H. (2019) scMerge leverages factor analysis, stable expression, and pseudoreplication to merge multiple single-cell RNA-seq datasets. Proceedings of the National Academy of Sciences. [package] [paper]\nLin, Y., Ghazanfar, S., Strbenac, D., Wang, A., Patrick, E., Lin, D., Speed, T., Yang, J.Y.H. & Yang, P. (2019) Evaluating stably expressed genes in single cells. GigaScience. [package] [paper]\nCao, Y.†, Lin, Y.†, Ormerod, J., Yang, P., Yang, J.Y.H. & Lo, K. (2019) scDC: single cell differential composition analysis. BMC Bioinformatics. [package] [paper]"
+  },
+  {
+    "objectID": "publication.html#applications",
+    "href": "publication.html#applications",
+    "title": "Publications",
+    "section": "Applications",
+    "text": "Applications\n\nSingle-cell\n\nHe, J.†, Lin, Y.†, Meng M., Li J., Yang, J.Y.H., Wang H. (2021) Construction of a human cell landscape of COVID-19 infection at single-cell level. Aging and disease. [paper]\nSu, X., Zhao, L., Shi, Y., Zhang, R., Long, Q., Bai, S., Luo, Q., Lin, Y., Zou, X., Ghazanfar, S. and Tao, K., … & Han, Z.G. (2021) Clonal evolution in liver cancer at single-cell and single-variant resolution. Journal of hematology & oncology.[paper]\nSu, X., Long, Q., Bo, J., Shi, Y., Zhao, L.N., Lin Y., Luo, Q., Ghazanfar, S., Zhang, C., Liu, Q., Wang, L., He, K., He, J., Cui, X., Yang, J.Y.H., Han, Z.G., Yang, G., and Sha, J.J. (2020) Mutational and transcriptomic landscapes of a rare human prostate basal cell carcinoma. The Prostate. [paper]\n\n\n\nKidney transplant\n\nLin, Y., Teixeira-Pinto, A., Opdam, H., Chapman, J. R., Craig, J. C., Rogers, N., … & Wong, G. (2022) Nonutilization of Kidneys From Donors After Circulatory Determinant of Death. Transplantation Direct. [paper]"
+  },
+  {
+    "objectID": "softwares.html",
+    "href": "softwares.html",
+    "title": "Softwares",
+    "section": "",
+    "text": "scMerge: Statistical approach for removing unwanted variation from multiple single-cell datasets.\n\n\nGithub\n\n\n\n\n\n\n\n\n\nscClassify: sample size estimation and multiscale classification of cells using single and multiple reference.\n\n\nGithub\n\n\n\n\n\n\n\n\n\nscJoint: transfer learning for data integration of single-cell RNA-seq and ATAC-seq.\n\n\nGithub\n\n\n\n\n\n\n\n\n\nCiteFuse: a streamlined package consisting of a suite of tools for CITE-seq data.\n\n\nGithub"
+  },
+  {
+    "objectID": "softwares/index.html#section-1",
+    "href": "softwares/index.html#section-1",
+    "title": "Softwares",
+    "section": "2021–22",
+    "text": "2021–22"
+  },
+  {
+    "objectID": "softwares/index.html#section-2",
+    "href": "softwares/index.html#section-2",
+    "title": "Softwares",
+    "section": "2020–21",
+    "text": "2020–21"
+  },
+  {
+    "objectID": "softwares/index.html#section-3",
+    "href": "softwares/index.html#section-3",
+    "title": "Softwares",
+    "section": "2019–20",
+    "text": "2019–20"
+  },
+  {
+    "objectID": "softwares/index.html#section-4",
+    "href": "softwares/index.html#section-4",
+    "title": "Softwares",
+    "section": "2017–19",
+    "text": "2017–19"
+  },
+  {
+    "objectID": "softwares/index.html#section-5",
+    "href": "softwares/index.html#section-5",
+    "title": "Softwares",
+    "section": "2007–15",
+    "text": "2007–15"
+  },
+  {
+    "objectID": "softwares/index.html",
+    "href": "softwares/index.html",
+    "title": "Yingxin Lin",
+    "section": "",
+    "text": "No matching items"
   }
 ]
