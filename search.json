@@ -60,14 +60,14 @@
     "href": "publication.html#applications",
     "title": "Publications",
     "section": "Applications",
-    "text": "Applications\n\nSingle-cell\n\nHe, J.†, Lin, Y.†, Meng M., Li J., Yang, J.Y.H., Wang H. (2021) Construction of a human cell landscape of COVID-19 infection at single-cell level. Aging and disease. [paper]\nSu, X., Zhao, L., Shi, Y., Zhang, R., Long, Q., Bai, S., Luo, Q., Lin, Y., Zou, X., Ghazanfar, S. and Tao, K., … & Han, Z.G. (2021) Clonal evolution in liver cancer at single-cell and single-variant resolution. Journal of hematology & oncology.[paper]\nSu, X., Long, Q., Bo, J., Shi, Y., Zhao, L.N., Lin Y., Luo, Q., Ghazanfar, S., Zhang, C., Liu, Q., Wang, L., He, K., He, J., Cui, X., Yang, J.Y.H., Han, Z.G., Yang, G., and Sha, J.J. (2020) Mutational and transcriptomic landscapes of a rare human prostate basal cell carcinoma. The Prostate. [paper]\n\n\n\nKidney transplant\n\nLin, Y., Teixeira-Pinto, A., Opdam, H., Chapman, J. R., Craig, J. C., Rogers, N., … & Wong, G. (2022) Nonutilization of Kidneys From Donors After Circulatory Determinant of Death. Transplantation Direct. [paper]"
+    "text": "Applications\n\nSingle-cell\n\nHe, J.†, Lin, Y.†, Meng M., Li J., Yang, J.Y.H., Wang H. (2021) Construction of a human cell landscape of COVID-19 infection at single-cell level. Aging and disease. [paper]\nSu, X., Zhao, L., Shi, Y., Zhang, R., Long, Q., Bai, S., Luo, Q., Lin, Y., Zou, X., Ghazanfar, S. and Tao, K., … & Han, Z.G. (2021) Clonal evolution in liver cancer at single-cell and single-variant resolution. Journal of hematology & oncology.[paper]\nSu, X., Long, Q., Bo, J., Shi, Y., Zhao, L.N., Lin Y., Luo, Q., Ghazanfar, S., Zhang, C., Liu, Q., Wang, L., He, K., He, J., Cui, X., Yang, J.Y.H., Han, Z.G., Yang, G., and Sha, J.J. (2020) Mutational and transcriptomic landscapes of a rare human prostate basal cell carcinoma. The Prostate. [paper]\n\n\n\nKidney transplant\n\nLin, Y., Teixeira-Pinto, A., Opdam, H., Chapman, J. R., Craig, J. C., Rogers, N., … & Wong, G. (2022) Nonutilization of Kidneys From Donors After Circulatory Determinant of Death. Transplantation Direct. [paper]\nLim, W.H., Ooi E., Pankaj, A., Teixeira-Pinto, A., Lin, Y., … & Wong, G. (2022) The incidence of cancer recurrence and new cancer following commencement of dialysis. Clinical Kidney Journal. [paper]\nChung, E., Blazek, K., Teixeira-Pinto, A., Sharma, A., Kim, S., Lin, Y., … & Wong, G. (2022) Predictive Models for Recurrent Membranous Nephropathy After Kidney Transplantation. Transplantation Direct. [paper]"
   },
   {
     "objectID": "softwares.html",
     "href": "softwares.html",
     "title": "Softwares",
     "section": "",
-    "text": "scMerge: Statistical approach for removing unwanted variation from multiple single-cell datasets.\n\n\nGithub\n\n\n\n\n\n\n\n\n\nscClassify: sample size estimation and multiscale classification of cells using single and multiple reference.\n\n\nGithub\n\n\n\n\n\n\n\n\n\nscJoint: transfer learning for data integration of single-cell RNA-seq and ATAC-seq.\n\n\nGithub\n\n\n\n\n\n\n\n\n\nCiteFuse: a streamlined package consisting of a suite of tools for CITE-seq data.\n\n\nGithub"
+    "text": "scMerge: Statistical approach for removing unwanted variation from multiple single-cell datasets.\n\n\nGithub \n\n\n\n\n\n\n\n\n\nscClassify: sample size estimation and multiscale classification of cells using single and multiple reference.\n\n\nGithub \n\n\n\n\n\n\n\n\n\nCiteFuse: a streamlined package consisting of a suite of tools for CITE-seq data.\n\n\nGithub"
   },
   {
     "objectID": "softwares/index.html#section-1",
@@ -110,5 +110,33 @@
     "title": "Yingxin Lin",
     "section": "",
     "text": "No matching items"
+  },
+  {
+    "objectID": "softwares.html#python-packages",
+    "href": "softwares.html#python-packages",
+    "title": "Softwares",
+    "section": "Python packages",
+    "text": "Python packages\n\n\n\n\n\n\nscJoint: transfer learning for data integration of single-cell RNA-seq and ATAC-seq.\n\n\nGithub"
+  },
+  {
+    "objectID": "softwares.html#packages-statistics",
+    "href": "softwares.html#packages-statistics",
+    "title": "Softwares",
+    "section": "Packages statistics",
+    "text": "Packages statistics"
+  },
+  {
+    "objectID": "talk.html",
+    "href": "talk.html",
+    "title": "Talk",
+    "section": "",
+    "text": "A statistical framework reveals molecular heterogeneity in response to treatment at single-cell resolution. Talk presented at ABACBS 2022, Melbourne, Australia (2022, Nov).\nAtlas-scale data integration for single-cell meta-analysis. Talk presented at CSHL Meetings Biological Data Science 2022, New York, US (2022, Nov).\nStatistical modelling and machine learning for single cell data harmonisation and analysis. Invited talk presented at ACT RNA Club seminar, online (2022, August).\nLarge scale single-cell multi-sample multi-condition data integration using scMerge2. Talk presented at SBRS 2022, Sydney, Australia (2022, June).\nLarge scale single-cell multi-sample multi-condition data integration using scMerge2. Talk presented at WNAR 2022, Online (2022, June).\nLarge scale single-cell multi-sample multi-condition data integration using scMerge2. Talk presented at ABACBS 2021, Online (2021, Nov).\nscJoint: transfer learning for data integration of atlas-scale single-cell RNA-seq and ATAC-seq. Talk presented at HCA Asia meeting, Online (2021, Nov).\nscJoint: transfer learning for data integration of atlas-scale single-cell RNA-seq and ATAC-seq. Talk presented at ISMB/ECCB 2021 Single Cell and Spatial Data Analysis workshop, Online (2021, July).\nData harmonization and cell type identification via statistical learning. Talk presented at 21st J.B. Douglas Awards, Sydney, Australia (2020, Dec).\nscJoint: transfer learning for data integration of single-cell RNA-seq and ATAC-seq. Talk presented at ABACBS 2020, Online (2020, Nov).\nIntegrative analysis of breast cancer survival based on spatial features. Talk presented at the ISMB 2020 single-cell cancer genomics workshop, Online (2020, July).\nIntegrative analysis of breast cancer survival based on spatial features. Talk presented at BIRS Mathematical Frameworks for Integrative Analysis of Emerging Biological Data Types workshop, Online (2020, June).\nSample size estimation and multiscale classification of cells using single and multiple references. Talk presented at GIW/ABACBS 2019, Sydney, Australia (2019, Dec).\nscClassify: Multiscale classification of single cells via cell-type hierarchies based on ensemble learning and sample size estimation. Talk presented at Ozsinglecell 2019, Melbourne, Australia (2019, July).\nscMerge: Integration of multiple single-cell transcriptomics datasets leveraging stable expression and pseudo-replication. Talk presented at BioC Asia 2018, Melbourne, Australia (2018, Nov).\nscMerge: Integration of multiple single-cell transcriptomics datasets leveraging stable expression and pseudo-replication. Talk presented at ABACBS2018, Melbourne, Australia (2018, Nov).\nscMerge: Removing unwanted variation for merging multiple single cell datasets. Invited talk presented at Towards Greater Reproducibility in Medical Research Symposium, Olivia Newton-John Cancer Research Institute (ONJCRI), Melbourne, Australia. (2018, July)"
+  },
+  {
+    "objectID": "talk.html#workshops",
+    "href": "talk.html#workshops",
+    "title": "Talk",
+    "section": "Workshops",
+    "text": "Workshops\n\nAdvanced Phenotyping in Single Cell Data Analysis. Workshop conducted at the Laboratory of Data Discovery for Health (D²4H), The University of Hong Kong 2021, Online.\nHands-on experience to CiteFuse that consists of a suite of tools for the integration and the downstream analysis of CITE-seq data. Workshop conducted at 6th Bioconductor Asia Meeting 2020, Online.\nSingle-cell RNA-seq Analysis. Workshop conducted at AMSI BioInfoSummer 2019, Sydney, Australia.\nSingle-cell RNA-seq Analysis. Workshop conducted at Charles Perkins Center 2019, the University of Sydney, Sydney, Australia.\nscMerge: Integration of multiple single-cell transcriptomics datasets leveraging stable expression and pseudo-replication. Workshop conducted at AMSI BioInfoSummer 2018, Perth, Australia."
   }
 ]
